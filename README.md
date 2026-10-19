@@ -1,6 +1,6 @@
 # AI Keyboard site
 
-Static GitHub Pages site for AI Keyboard (Android), written for app version 2.2. Plain HTML and CSS, no build step, no third-party scripts, fonts or analytics. Every link is relative, so it works under a project path such as `https://yck2024.github.io/ai-keyboard/`.
+Static GitHub Pages site for AI Keyboard (Android), written for app version 2.2. Plain HTML, CSS and a little JavaScript, no build step, no web fonts. The only third-party scripts are Google Analytics (tag `G-QLFWNZWDSS`, `content_group: 'ai-keyboard'`) and the shared helper `https://yck2024.github.io/oai-html/assets/analytics.js`, added right after `<head>` on every page, as in the oai-html publish-page skill. The app itself has no analytics; `privacy.html` says so and describes the website's analytics separately. Every link is relative, so it works under a project path such as `https://yck2024.github.io/ai-keyboard/`.
 
 | Page | File |
 |---|---|
@@ -20,7 +20,7 @@ Preview locally with any static server, for example `python3 -m http.server` in 
 ## Content sources
 
 - Feature copy and the privacy wording come from the app's v2.2 release notes and Google Play listing.
-- Colours are the app's Sprout palette (`ui/theme/Sprout.kt`), light and dark.
+- Colours are the app's Sprout greens (`ui/theme/Sprout.kt`) lifted to a light mint and leaf palette with a butter accent. The site is light only.
 - Icon, screenshots (`assets/img/screens/`) and the feature graphic are the approved Play store assets: marketing images only. Two of the screenshots (live dictation and dictation result) are staged renders with invented demo text, as noted in the app's store-asset README.
 - `licenses/` is a copy of the notice files that ship inside the app.
 

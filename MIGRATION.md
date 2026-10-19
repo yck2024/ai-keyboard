@@ -35,7 +35,7 @@ GitHub Pages cannot send HTTP 301s. Use a minimal HTML stub:
 <p>AI Keyboard now lives at <a href="https://yck2024.github.io/ai-keyboard/">yck2024.github.io/ai-keyboard</a>.</p>
 ```
 
-Keep the Google Analytics snippet from `myGA.html` on stubs if the kengblog style rule is still wanted. The new site deliberately has no analytics.
+Keep the Google Analytics snippet from `myGA.html` on stubs if the kengblog style rule is still wanted. The new site uses the shared oai-html Google tag (`G-QLFWNZWDSS`, content group `ai-keyboard`), not the old kengblog tag.
 
 ## Open items for the captain
 

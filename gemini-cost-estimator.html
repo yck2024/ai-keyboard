@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QLFWNZWDSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QLFWNZWDSS', { content_group: 'ai-keyboard' });
+</script>
+<script defer src="https://yck2024.github.io/oai-html/assets/analytics.js"></script>
+<script>document.documentElement.classList.add('js');</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cost estimator — AI Keyboard</title>
@@ -23,7 +34,7 @@
   <div class="container">
     <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
     <nav class="site-nav" aria-label="Main">
-      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html" aria-current="page">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html">Privacy</a>
+      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html" aria-current="page">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html">Privacy</a> <a class="header-cta" href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Get the app</a>
     </nav>
   </div>
 </header>
@@ -48,7 +59,7 @@
 
 <h2 id="estimator">Estimator</h2>
 <noscript><p class="callout warn">The estimator needs JavaScript. The table above and the examples below give the same prices.</p></noscript>
-<form id="est-form" class="estimator" autocomplete="off">
+<form id="est-form" class="estimator" autocomplete="off" data-analytics-ignore>
   <fieldset class="field"><legend>Billing tier</legend>
     <div class="seg">
       <label><input type="radio" name="tier" value="paid" checked> Paid (estimate cost)</label>
@@ -91,7 +102,7 @@
     <span class="hint">Most rewrites are about the same length.</span></div>
 </form>
 
-<div class="result" role="status" aria-live="polite" aria-atomic="false">
+<div class="result" data-analytics-ignore role="status" aria-live="polite" aria-atomic="false">
   <div class="sub">Estimated monthly total</div>
   <div class="big" id="total">$—</div>
   <div class="sub">The range reflects tokenisation uncertainty.</div>
@@ -156,6 +167,7 @@
     <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
   </div>
 </footer>
+<script src="assets/js/site.js" defer></script>
 <script src="assets/js/estimator.js" defer></script>
 </body>
 </html>
