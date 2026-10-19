@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open-source licences — AI Keyboard</title>
+<meta name="description" content="Third-party open-source components, models and licence texts used by AI Keyboard 2.2.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#356849">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Open-source licences — AI Keyboard">
+<meta property="og:description" content="Third-party open-source components, models and licence texts used by AI Keyboard 2.2.">
+<meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
+<meta property="og:url" content="https://yck2024.github.io/ai-keyboard/licenses.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / Licences</p><h1>Open-source licences</h1><p>AI Keyboard builds on open-source software and open models. These are the third-party components in version 2.2 and the terms they are used under.</p></div></div>
+<div class="page"><div class="container"><div class="layout">
+<nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#speech">Speech &amp; on-device AI</a></li><li><a href="#models">Models</a></li><li><a href="#cjk">Japanese &amp; Chinese</a></li><li><a href="#android">Android libraries</a></li><li><a href="#all">All notices</a></li></ol></nav>
+<article>
+
+<p>The components below are open-source software or openly licensed models, and their licence texts are published here as the licences require. The same notices ship inside the app. Corrections are welcome at <a href="mailto:support@kengblog.com">support@kengblog.com</a>.</p>
+
+<h2 id="speech">Offline speech and on-device AI</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Component</th><th>Licence</th><th>Used for</th><th>Source</th></tr></thead>
+<tbody><tr><td><strong>sherpa-onnx Android runtime</strong><br><span class="meta">v1.13.8</span></td><td>Apache-2.0<br><a href="licenses/LICENSE-APACHE-2.0.txt">Licence text</a></td><td>Runs the offline SenseVoice speech recogniser. Built from source for arm64-v8a, recognition only.</td><td><a href="https://github.com/k2-fsa/sherpa-onnx">github.com/k2-fsa/sherpa-onnx</a></td></tr><tr><td><strong>ONNX Runtime</strong><br><span class="meta">v1.28.2, Microsoft</span></td><td>MIT<br><a href="licenses/ONNX_RUNTIME_LICENSE.txt">Licence text</a></td><td>Runs the SenseVoice model inside sherpa-onnx.</td><td><a href="https://github.com/microsoft/onnxruntime">github.com/microsoft/onnxruntime</a></td></tr><tr><td><strong>kaldi-native-fbank</strong><br><span class="meta">v1.22.3</span></td><td>Apache-2.0<br><a href="licenses/KALDI_NATIVE_FBANK_LICENSE.txt">Licence text</a></td><td>Audio feature extraction, statically linked in sherpa-onnx.</td><td><a href="https://github.com/csukuangfj/kaldi-native-fbank">github.com/csukuangfj/kaldi-native-fbank</a></td></tr><tr><td><strong>kaldi-decoder</strong><br><span class="meta">v0.3.0</span></td><td>Apache-2.0<br><a href="licenses/KALDI_DECODER_LICENSE.txt">Licence text</a></td><td>Decoding, statically linked in sherpa-onnx.</td><td><a href="https://github.com/k2-fsa/kaldi-decoder">github.com/k2-fsa/kaldi-decoder</a></td></tr><tr><td><strong>kaldifst (with OpenFST-derived code)</strong><br><span class="meta">v1.8.0</span></td><td>Apache-2.0<br><a href="licenses/KALDIFST_LICENSE.txt">Licence text</a></td><td>Statically linked in sherpa-onnx.</td><td><a href="https://github.com/k2-fsa/kaldifst">github.com/k2-fsa/kaldifst</a></td></tr><tr><td><strong>simple-sentencepiece</strong><br><span class="meta">v0.7</span></td><td>Apache-2.0<br><a href="licenses/SIMPLE_SENTENCEPIECE_LICENSE.txt">Licence text</a></td><td>Tokenisation, statically linked in sherpa-onnx.</td><td><a href="https://github.com/pkufool/simple-sentencepiece">github.com/pkufool/simple-sentencepiece</a></td></tr><tr><td><strong>LLVM libc++ (Android NDK 27.2.12479018)</strong><br><span class="meta"></span></td><td>Apache-2.0 with LLVM Exceptions, and MIT<br><a href="licenses/LLVM_LIBCXX_LICENSE.txt">Licence text</a></td><td>C++ runtime.</td><td><a href="https://libcxx.llvm.org/">libcxx.llvm.org/</a></td></tr><tr><td><strong>llama.cpp and ggml</strong><br><span class="meta">tag b11696</span></td><td>MIT<br><a href="licenses/LLAMA_CPP_LICENSE.txt">Licence text</a></td><td>Runs the optional on-device writing-style model on the CPU.</td><td><a href="https://github.com/ggml-org/llama.cpp">github.com/ggml-org/llama.cpp</a></td></tr><tr><td><strong>OpenCC4j</strong><br><span class="meta">v1.13.1</span></td><td>Apache-2.0<br><a href="licenses/OPENCC4J_LICENSE.txt">Licence text</a></td><td>Traditional-Chinese phrase conversion for Taiwan.</td><td><a href="https://github.com/houbb/opencc4j">github.com/houbb/opencc4j</a></td></tr></tbody></table></div>
+<p>ONNX Runtime's complete upstream third-party notices, including its bundled dependencies, are in <a href="licenses/ONNX_RUNTIME_THIRD_PARTY_NOTICES.txt">ONNX_RUNTIME_THIRD_PARTY_NOTICES.txt</a>. The pinned upstream releases provide licence files but no separate NOTICE files.</p>
+
+<h2 id="models">Models, downloaded on demand</h2>
+<p>These are not bundled in the app. They are downloaded from Hugging Face to private app storage when you ask for them, and verified by checksum.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Model</th><th>Licence</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><strong>SenseVoice Small, INT8 ONNX</strong><br><span class="meta">by FunAudioLLM / Alibaba Group, converted by the sherpa-onnx project</span></td><td>FunASR Model Open Source License Agreement v1.1 (custom, not MIT). <a href="licenses/FUNASR_MODEL_LICENSE.txt">Licence text</a></td><td>Requires attribution to the source and author and retention of the model names. The licence describes the model software as for reference and learning purposes only. Original: <a href="https://github.com/FunAudioLLM/SenseVoice">github.com/FunAudioLLM/SenseVoice</a>. Converted artefact: <a href="https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17">Hugging Face</a>.</td></tr>
+<tr><td><strong>Qwen3 0.6B and Qwen3 1.7B</strong> (Q4_K_M GGUF)<br><span class="meta">by the Qwen team, Alibaba Cloud</span></td><td>Apache-2.0. <a href="licenses/LICENSE-APACHE-2.0.txt">Licence text</a></td><td>GGUF quantisations by bartowski: <a href="https://huggingface.co/bartowski/Qwen_Qwen3-0.6B-GGUF">0.6B</a>, <a href="https://huggingface.co/bartowski/Qwen_Qwen3-1.7B-GGUF">1.7B</a>. Original: <a href="https://github.com/QwenLM/Qwen3">github.com/QwenLM/Qwen3</a>.</td></tr>
+</tbody></table></div>
+
+<h2 id="cjk">Japanese and Chinese typing engines</h2>
+<p>Bundled in the app and run entirely on the device, with no network calls. Full licence texts: <a href="licenses/CJK_TYPING_LICENSES.txt">CJK_TYPING_LICENSES.txt</a>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Component</th><th>Licence</th><th>Used for</th><th>Source</th></tr></thead>
+<tbody><tr><td><strong>Mozc</strong><br><span class="meta">revision 0136c357</span></td><td>BSD 3-Clause</td><td>Japanese conversion. Its dictionary derives from IPAdic (Nara Institute of Science and Technology, ICOT Free Software terms) and the public-domain Okinawa dictionary. Statically links Abseil (Apache-2.0) and Protocol Buffers lite (BSD 3-Clause).</td><td><a href="https://github.com/google/mozc">github.com/google/mozc</a></td></tr><tr><td><strong>librime</strong><br><span class="meta">1.17.0</span></td><td>BSD 3-Clause</td><td>Chinese input engine.</td><td><a href="https://github.com/rime/librime">github.com/rime/librime</a></td></tr><tr><td><strong>yaml-cpp, LevelDB, marisa-trie</strong><br><span class="meta">marisa-trie 0.3.1</span></td><td>MIT; BSD 3-Clause; BSD 2-Clause</td><td>Libraries used by librime. marisa-trie is used under its BSD 2-Clause option (it is offered as BSD 2-Clause or LGPL-2.1-or-later).</td><td><a href="https://github.com/jbeder/yaml-cpp">github.com/jbeder/yaml-cpp</a></td></tr><tr><td><strong>OpenCC</strong><br><span class="meta">1.4.2</span></td><td>Apache-2.0<br><a href="licenses/LICENSE-APACHE-2.0.txt">Licence text</a></td><td>Script conversion between Traditional and Simplified Chinese, including the t2tw chain for Traditional (Taiwan).</td><td><a href="https://github.com/BYVoid/OpenCC">github.com/BYVoid/OpenCC</a></td></tr><tr><td><strong>Rime Luna Pinyin (朙月拼音) and Rime Essay</strong><br><span class="meta">revisions 56b934b0 and 054920de</span></td><td>GNU LGPL v3.0</td><td>Pinyin data. The app's compiled pinyin table is a build product of these two datasets, and its schemas are reduced derivatives of Luna Pinyin's.</td><td><a href="https://github.com/rime/rime-luna-pinyin">github.com/rime/rime-luna-pinyin</a></td></tr></tbody></table></div>
+
+<h2 id="android">Android and Kotlin libraries</h2>
+<p>The app also uses Jetpack Compose and other AndroidX libraries, Dagger Hilt, Room, Kotlin coroutines and serialization, Retrofit and OkHttp, all under the Apache License 2.0, which is reproduced in <a href="licenses/LICENSE-APACHE-2.0.txt">LICENSE-APACHE-2.0.txt</a>.</p>
+
+<h2 id="all">All notice files</h2>
+<ul>
+  <li><a href="licenses/third_party_notices.txt">third_party_notices.txt</a>, the notice file shipped in the app</li>
+  <li><a href="licenses/LICENSE-APACHE-2.0.txt">LICENSE-APACHE-2.0.txt</a></li>
+  <li><a href="licenses/CJK_TYPING_LICENSES.txt">CJK_TYPING_LICENSES.txt</a></li>
+  <li><a href="licenses/FUNASR_MODEL_LICENSE.txt">FUNASR_MODEL_LICENSE.txt</a></li>
+  <li><a href="licenses/LLAMA_CPP_LICENSE.txt">LLAMA_CPP_LICENSE.txt</a>, <a href="licenses/ONNX_RUNTIME_LICENSE.txt">ONNX_RUNTIME_LICENSE.txt</a>, <a href="licenses/ONNX_RUNTIME_THIRD_PARTY_NOTICES.txt">ONNX_RUNTIME_THIRD_PARTY_NOTICES.txt</a></li>
+  <li><a href="licenses/KALDI_NATIVE_FBANK_LICENSE.txt">KALDI_NATIVE_FBANK_LICENSE.txt</a>, <a href="licenses/KALDI_DECODER_LICENSE.txt">KALDI_DECODER_LICENSE.txt</a>, <a href="licenses/KALDIFST_LICENSE.txt">KALDIFST_LICENSE.txt</a>, <a href="licenses/SIMPLE_SENTENCEPIECE_LICENSE.txt">SIMPLE_SENTENCEPIECE_LICENSE.txt</a></li>
+  <li><a href="licenses/LLVM_LIBCXX_LICENSE.txt">LLVM_LIBCXX_LICENSE.txt</a>, <a href="licenses/OPENCC4J_LICENSE.txt">OPENCC4J_LICENSE.txt</a></li>
+</ul>
+<p class="meta">Gemini, Groq and Hugging Face are separate services you may choose to use; they are not bundled software. See the <a href="privacy.html">privacy policy</a>.</p>
+
+</article>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+        <p>A free Android keyboard for people who talk, fix, and switch languages. Made by YCK.</p>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="setup.html">Set up the keyboard</a></li>
+          <li><a href="usage.html">How to use it</a></li>
+          <li><a href="groq-api-key.html">Get a Groq key</a></li>
+          <li><a href="gemini-api-key.html">Get a Gemini key</a></li>
+          <li><a href="gemini-cost-estimator.html">Cost estimator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Open-source licences</a></li>
+          <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+          <li><a href="mailto:support@kengblog.com">support@kengblog.com</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

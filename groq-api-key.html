@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get a Groq API key — AI Keyboard</title>
+<meta name="description" content="Create a free Groq API key and paste it into AI Keyboard for Whisper dictation and fast AI rewriting.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#356849">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Get a Groq API key — AI Keyboard">
+<meta property="og:description" content="Create a free Groq API key and paste it into AI Keyboard for Whisper dictation and fast AI rewriting.">
+<meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
+<meta property="og:url" content="https://yck2024.github.io/ai-keyboard/groq-api-key.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html" aria-current="page">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / <a href="api-keys.html">AI providers</a> / Groq</p><h1>Get a Groq API key</h1><p>Groq powers Whisper dictation and fast text rewriting. Creating a key takes about two minutes.</p></div></div>
+<div class="page"><div class="container"><div class="layout">
+<nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#steps">Steps</a></li><li><a href="#use">Turn it on</a></li><li><a href="#cost">Cost and limits</a></li><li><a href="#privacy">What goes to Groq</a></li></ol></nav>
+<article>
+
+<div class="callout"><p>Keep your key private. Do not share it or post it publicly. Anyone with it can use your Groq quota.</p></div>
+
+<h2 id="steps">Steps</h2>
+<ol class="steps">
+  <li><strong>Create a Groq account</strong>Go to <a href="https://console.groq.com/">console.groq.com</a> and sign up with Google, GitHub or email, or log in.</li>
+  <li><strong>Open the API Keys page</strong>In the console, open <a href="https://console.groq.com/keys">API Keys</a> and choose <strong>Create API Key</strong>.</li>
+  <li><strong>Name it and submit</strong>Give it any name, for example “AI Keyboard”, set an expiration if you want one, and submit. The new key starts with <code>gsk_</code>.</li>
+  <li><strong>Copy it right away</strong>Groq shows the full key once. If you lose it, delete it and create another.</li>
+  <li><strong>Paste it into AI Keyboard</strong>Open <strong>Settings → Cloud &amp; privacy → Groq connection</strong> (the setup wizard has the same field), paste the key and save.</li>
+</ol>
+
+<h2 id="use">Turn it on</h2>
+<ul>
+  <li><strong>Dictation:</strong> <strong>Settings → Dictation → Speech provider → Groq Whisper</strong> (whisper-large-v3).</li>
+  <li><strong>Writing styles:</strong> <strong>Settings → AI cleanup → Groq</strong>. The recommended model is Groq-hosted GPT-OSS 20B. Use <strong>Fetch available models</strong> to pick another model your key can use, or enter a custom model ID.</li>
+</ul>
+<p>The keyboard also falls back to whichever provider has a key, so a Groq-only setup works for rewriting even if you never touch the AI cleanup page.</p>
+
+<h2 id="cost">Cost and limits</h2>
+<p>Groq has a free plan with rate limits, and a paid developer plan billed by use. As of October 2026 its published rates for the models above are about $0.111 per hour of Whisper large-v3 audio and $0.075 / $0.30 per million input / output tokens for GPT-OSS 20B. See <a href="gemini-cost-estimator.html">the cost estimator</a> to turn that into a monthly figure, and check <a href="https://console.groq.com/docs/models">Groq's model page</a> for current numbers and limits. Groq's console also lets you set spend limits.</p>
+
+<h2 id="privacy">What goes to Groq</h2>
+<p>When Groq is your speech provider, your audio is sent to Groq in short chunks while you speak. When it is your writing-style provider, the text you ask it to rewrite is sent. Both use your key and nothing passes through an AI Keyboard server. Groq's own policy applies to what it does next; see <a href="https://groq.com/privacy-policy">Groq's privacy policy</a>.</p>
+<p>Prefer not to send anything? Use <a href="usage.html#dictation">offline dictation</a> and the on-device writing model instead.</p>
+
+</article>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+        <p>A free Android keyboard for people who talk, fix, and switch languages. Made by YCK.</p>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="setup.html">Set up the keyboard</a></li>
+          <li><a href="usage.html">How to use it</a></li>
+          <li><a href="groq-api-key.html">Get a Groq key</a></li>
+          <li><a href="gemini-api-key.html">Get a Gemini key</a></li>
+          <li><a href="gemini-cost-estimator.html">Cost estimator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Open-source licences</a></li>
+          <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+          <li><a href="mailto:support@kengblog.com">support@kengblog.com</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

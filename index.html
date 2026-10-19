@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Keyboard: Voice & Rewrite — the free Android keyboard</title>
+<meta name="description" content="Voice-first AI keyboard for Android: dictate, rewrite in one hold, and type Japanese and Chinese on-device. Free, with your own Groq or Gemini key.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#356849">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Keyboard: Voice & Rewrite — the free Android keyboard">
+<meta property="og:description" content="Voice-first AI keyboard for Android: dictate, rewrite in one hold, and type Japanese and Chinese on-device. Free, with your own Groq or Gemini key.">
+<meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
+<meta property="og:url" content="https://yck2024.github.io/ai-keyboard/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero" style="padding:0">
+  <div class="container">
+    <div class="hero-copy">
+      <p class="eyebrow">Free Android keyboard</p>
+      <h1>Speak it. Fix it. <span>Switch languages in one tap.</span></h1>
+      <p class="lead">AI Keyboard puts a real writing pipeline above your keys: dictate, watch the text come back clean, rewrite a whole message with one hold, and type Japanese and Chinese right on your phone.</p>
+      <div class="btn-row">
+        <!-- Play link: package id confirmed from the app build (applicationId com.kengblog.aikeyboard); confirm the listing is public before launch. -->
+        <a class="btn btn-butter" href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Get it on Google Play</a>
+        <a class="btn btn-ghost" href="setup.html">Set up in minutes</a>
+      </div>
+      <p class="note">The app is free. Bring your own Groq or Gemini key, or stay fully on your phone.</p>
+    </div>
+    <div class="hero-phones" aria-hidden="false">
+      <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/01-voice-home.webp" width="540" height="960" alt="AI Keyboard's voice home: a large microphone button above one full-width Keyboard button" loading="lazy" decoding="async"></div></figure>
+      <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/03-dictation-result.webp" width="540" height="960" alt="A messy dictated sentence next to its cleaned-up Fix Grammar version, with Insert and Copy buttons above the keyboard" loading="lazy" decoding="async"></div></figure>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="why">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="why">The keyboard for people who talk, fix, and switch languages</h2>
+      <p>Everything runs from the keyboard itself, in any app. No copy-paste trips, no separate assistant to open.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon" aria-hidden="true">🎙</div><h3>Voice, your way</h3><p>Dictate with Groq Whisper, Gemini Live, the Android speech service, or fully offline with SenseVoice. A badge shows which model did the work.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">✍️</div><h3>Rewrite in one hold</h3><p>Hold a writing-style chip and the whole message is rewritten in place, after a preview, with a five-second Undo.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">🌐</div><h3>One tap, another language</h3><p>Dictate in Japanese, send in English. The Language Chip re-runs the same text in the language you pick.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">🔒</div><h3>Your key, your data</h3><p>There is no AI Keyboard server. Text and audio go straight from your phone to the provider you chose, or never leave it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="tint" aria-labelledby="features-h">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="features-h">What's in version 2.2</h2>
+      <p>A fresh green design, a keyboard that can start with your voice, and Japanese and Chinese typing that never leaves your phone.</p>
+    </div>
+
+    <div class="feature">
+      <div>
+        <span class="tag">Voice home</span>
+        <h3>Start with your voice, or with your keys</h3>
+        <p>Choose <strong>Voice home</strong> and the keyboard opens to a large microphone with one full-width Keyboard button, so a message can start by speaking and finish by typing.</p>
+        <p>Nothing records until you tap, and password and number fields always keep their keys. Prefer keys first? That is how the keyboard starts until you opt in.</p>
+        <p><a href="usage.html#voice-home">How Voice home works →</a></p>
+      </div>
+      <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/01-voice-home.webp" width="540" height="960" alt="Voice home: a big microphone button and a full-width Keyboard button" loading="lazy" decoding="async"></div><figcaption>Voice home, opt-in</figcaption></figure>
+    </div>
+
+    <div class="feature">
+      <div>
+        <span class="tag">Dictation</span>
+        <h3>Voice typing that hears whole sentences, even offline</h3>
+        <p><strong>Groq Whisper large-v3</strong> transcribes pause-aligned 20–30 second chunks while you speak. <strong>Gemini 3.1 Flash Live</strong> streams a transcript and writes Japanese and Chinese without stray spaces. The <strong>Android speech service</strong> works with no key at all.</p>
+        <p>Or download the <strong>SenseVoice</strong> pack once (about 228&nbsp;MiB) and dictate with no network and no API key. Japanese, Mandarin, Korean, Cantonese and English are supported, the panel fills with live draft text while you speak, and your audio stays on your phone.</p>
+        <p><a href="usage.html#dictation">Compare the dictation options →</a></p>
+      </div>
+      <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/02-live-dictation.webp" width="540" height="960" alt="Offline SenseVoice listening panel showing live draft text and Stop + AI and Stop (no AI) buttons" loading="lazy" decoding="async"></div><figcaption>Live text while offline voice listens</figcaption></figure>
+    </div>
+
+    <div class="feature">
+      <div>
+        <span class="tag">Writing styles</span>
+        <h3>Fix the whole message with one hold</h3>
+        <p>Hold a writing-style chip and the keyboard rewrites everything in the text box. Fix grammar, go professional, make bullet points, summarise, or turn rambling into a reply you can send or a to-do list.</p>
+        <p>You get a preview first. Tap <strong>Replace</strong> and it is rewritten in place, with a five-second <strong>Undo</strong>. It refuses in password, email, phone and other sensitive fields.</p>
+        <p><a href="usage.html#styles">All writing styles →</a></p>
+      </div>
+      <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/03-dictation-result.webp" width="540" height="960" alt="Dictated sentence with its Fix Grammar rewrite, the original struck through, and a model badge" loading="lazy" decoding="async"></div><figcaption>Messy speech in, clean text out</figcaption></figure>
+    </div>
+
+    <div class="feature pair">
+      <div>
+        <span class="tag">On-device typing</span>
+        <h3>Type Japanese and Chinese on your phone</h3>
+        <p>Switch with the globe key beside the space bar. Type Japanese in romaji, or Traditional or Simplified Chinese in pinyin, and pick from conversion candidates above the keys.</p>
+        <p>It runs entirely on the device: no network, no key, and it works in airplane mode.</p>
+        <p><a href="usage.html#cjk">Turn on Japanese and Chinese typing →</a></p>
+      </div>
+      <div class="phones">
+        <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/04-japanese-typing.webp" width="540" height="960" alt="Typing ありがとう with Japanese candidates above the keys" loading="lazy" decoding="async"></div><figcaption>Japanese from romaji</figcaption></figure>
+        <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/05-chinese-typing.webp" width="540" height="960" alt="Typing ni hao with Chinese pinyin candidates above the keys" loading="lazy" decoding="async"></div><figcaption>Chinese pinyin</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div>
+        <span class="tag">Language Chip</span>
+        <h3>Answer in another language, from one tap</h3>
+        <p>Every result names the language it came back in. Tap the Language Chip to switch and re-run the same text. Hold and slide to jump across your shortlist of English, Japanese, Korean, Traditional or Simplified Chinese, Spanish, French, German and Portuguese.</p>
+        <p>An accidental hold costs nothing: release without sliding and you keep the language you had.</p>
+      </div>
+      <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/06-typing-languages.webp" width="540" height="960" alt="Languages settings listing English, Japanese romaji, Traditional and Simplified Chinese pinyin as typing languages" loading="lazy" decoding="async"></div><figcaption>Choose the languages your keys type</figcaption></figure>
+    </div>
+
+    <div class="feature">
+      <div>
+        <span class="tag">Your styles</span>
+        <h3>Your writing styles, in your order</h3>
+        <p>Eight built-in styles ship ready: Fix Grammar, Professional, Bullet points, Casual, Concise, Summary, Reply-ready and To-do List. Drag to reorder them, or write your own.</p>
+        <p>Your saved order is shared by the typing and dictation pickers, and new styles are added at the end, never over yours.</p>
+      </div>
+      <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/07-writing-styles.webp" width="540" height="960" alt="Writing styles settings with Fix Grammar, Professional and Bullet Points toggles and a drag handle on each" loading="lazy" decoding="async"></div><figcaption>Writing styles you can reorder</figcaption></figure>
+    </div>
+
+    <div class="feature">
+      <div>
+        <span class="tag">Setup</span>
+        <h3>Set up in minutes, then practise</h3>
+        <p>A guided walkthrough helps you enable and choose the keyboard, then lets you practise in a real text box. No key and no download are needed to start typing. Come back to it any time from Settings.</p>
+        <p><a href="setup.html">Follow the setup guide →</a></p>
+      </div>
+      <figure class="phone"><div class="phone-frame"><img src="assets/img/screens/08-guided-setup.webp" width="540" height="960" alt="Keyboard walkthrough checklist: enable AI Keyboard, choose AI Keyboard, choose Voice home or Keyboard home" loading="lazy" decoding="async"></div><figcaption>Guided setup and practice box</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="typing-h">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="typing-h">Typing help that never touches the network</h2>
+      <p>A suggestion strip offers words as you type, obvious typos fix themselves on space, and the next word is offered before you type it. One backspace undoes a fix and teaches the keyboard to leave that word alone. Words you teach it never leave your phone.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>Digits under your thumb</h3><p>Hold a top-row key for its digit, <code>q</code> for 1 through <code>p</code> for 0. No trip to the 123 page.</p></div>
+      <div class="card"><h3>A punctuation palette</h3><p>Hold <code>.</code> or <code>,</code> for sixteen marks. Slide to one and lift. Release without moving and you simply get the key you pressed.</p></div>
+      <div class="card"><h3>Backspace that hurries</h3><p>A held backspace starts on characters and switches to whole words after about a second. A tap always deletes exactly one.</p></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="privacy-h" style="padding-top:0">
+  <div class="container">
+    <div class="privacy-strip">
+      <div>
+        <h2 id="privacy-h">Your key, your data</h2>
+        <p>AI Keyboard has no server of its own, and the app is free. Cloud dictation and writing styles go directly from your phone to the provider you chose, using your own key. Offline SenseVoice, the on-device writing model, and Japanese and Chinese typing stay on your phone.</p>
+        <p><a href="privacy.html">Read the privacy policy →</a></p>
+      </div>
+      <ul>
+        <li>Keys are stored encrypted on the device.</li>
+        <li>Audio is recorded only while the microphone is on.</li>
+        <li>No audio or transcript is saved to disk.</li>
+        <li>A built-in usage screen shows your tokens, request by request.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta tint" aria-labelledby="cta-h">
+  <div class="container">
+    <h2 id="cta-h">Ready to try it?</h2>
+    <p>Install, follow the walkthrough, and you can be typing in a couple of minutes. Voice and AI features can wait until you want them.</p>
+    <div class="btn-row">
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Get it on Google Play</a>
+      <a class="btn btn-soft" href="api-keys.html">Pick an AI provider</a>
+    </div>
+    <p class="meta" style="margin-top:16px">Designed and tested daily by a developer who tried every major speech model and built a keyboard around the one that sounded best.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+        <p>A free Android keyboard for people who talk, fix, and switch languages. Made by YCK.</p>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="setup.html">Set up the keyboard</a></li>
+          <li><a href="usage.html">How to use it</a></li>
+          <li><a href="groq-api-key.html">Get a Groq key</a></li>
+          <li><a href="gemini-api-key.html">Get a Gemini key</a></li>
+          <li><a href="gemini-cost-estimator.html">Cost estimator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Open-source licences</a></li>
+          <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+          <li><a href="mailto:support@kengblog.com">support@kengblog.com</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

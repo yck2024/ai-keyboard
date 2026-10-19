@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to use AI Keyboard — AI Keyboard</title>
+<meta name="description" content="Dictate, rewrite with writing styles, switch the output language with the Language Chip, and type Japanese and Chinese on-device. A guide to every feature in version 2.2.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#356849">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How to use AI Keyboard — AI Keyboard">
+<meta property="og:description" content="Dictate, rewrite with writing styles, switch the output language with the Language Chip, and type Japanese and Chinese on-device. A guide to every feature in version 2.2.">
+<meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
+<meta property="og:url" content="https://yck2024.github.io/ai-keyboard/usage.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html" aria-current="page">How to use</a> <a href="api-keys.html">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / How to use</p><h1>How to use AI Keyboard</h1><p>Voice, writing styles, languages and typing, one section each. Everything here is in version 2.2.</p></div></div>
+<div class="page"><div class="container"><div class="layout">
+<nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#voice-home">Voice home</a></li><li><a href="#dictation">Dictation</a></li><li><a href="#styles">Writing styles</a></li><li><a href="#language-chip">Language Chip</a></li><li><a href="#cjk">Japanese &amp; Chinese</a></li><li><a href="#typing">Typing &amp; gestures</a></li><li><a href="#transform">Other apps</a></li><li><a href="#settings-map">Settings map</a></li></ol></nav>
+<article>
+
+<h2 id="voice-home">Voice home or keyboard home</h2>
+<p>With <strong>Voice home</strong> on, the keyboard opens to a large microphone and one full-width <strong>Keyboard</strong> button. Tap the mic to dictate. After a dictation you stay mic-ready; tap <strong>Keyboard</strong> to edit by typing. A genuine refocus on a text field returns you to your chosen home.</p>
+<ul>
+  <li>Nothing records until you tap the microphone.</li>
+  <li>Password and number fields always keep their keys.</li>
+  <li>Output language and writing style stay with the result.</li>
+  <li>Turn it on or off in <strong>Settings → Dictation → Use voice as home</strong>. Existing installs stay keys-first until you opt in.</li>
+</ul>
+
+<h2 id="dictation">Dictation</h2>
+<p>Tap the microphone, speak, then stop. The result appears in a preview panel with a badge naming the model that produced it (Android's built-in recogniser shows no badge, because it runs on your phone and has no model to name).</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Provider</th><th>How it works</th><th>Key</th><th>Network</th></tr></thead>
+<tbody>
+<tr><td><strong>Offline: SenseVoice</strong></td><td>Runs on your phone after a one-time ~228&nbsp;MiB download. The panel fills with live draft text while you speak; Stop transcribes the full recording for the final text. Japanese, Mandarin, Korean, Cantonese and English only.</td><td>None</td><td>Only for the one-time download</td></tr>
+<tr><td><strong>Android speech</strong></td><td>Your phone's own speech service. Language support depends on the service.</td><td>None</td><td>Depends on the service; it may use the network</td></tr>
+<tr><td><strong>Groq Whisper</strong> (large-v3)</td><td>Audio is sent in pause-aligned 20–30 second chunks while you speak, so long messages appear progressively. A failed chunk is retried once; text that did succeed is kept.</td><td><a href="groq-api-key.html">Groq key</a></td><td>Yes, direct to Groq</td></tr>
+<tr><td><strong>Gemini Live</strong> (3.1 Flash Live)</td><td>Streams a transcript. It arrives at pauses rather than word by word, and Japanese and Chinese come back without stray spaces.</td><td><a href="gemini-api-key.html">Gemini key</a></td><td>Yes, direct to Google</td></tr>
+</tbody></table></div>
+<p>Choose the provider in <strong>Settings → Dictation → Speech provider</strong>. For online providers, <strong>Speech language</strong> defaults to Auto-detect; Gemini treats an explicit choice as a hint. Deleting the offline pack or clearing a key asks for confirmation and tells you that a selected provider will fall back to Android speech.</p>
+
+<h3 id="stop">Stop + AI, or Stop (no AI)</h3>
+<ul>
+  <li><strong>Stop + AI</strong> applies your selected writing style to the transcript. Tapping the mic to stop does the same: your words are inserted right away, then swapped for the cleaned version when the AI finishes. If the AI fails or you move on, your original words stay.</li>
+  <li><strong>Stop (no AI)</strong> inserts the transcript as it is. An automatic stop after silence also inserts without AI.</li>
+  <li>Deselect every writing style and AI cleanup is off. Your speech provider still handles the audio.</li>
+</ul>
+<p>If a speech provider is not set up, a style is selected but no key is saved, a reply comes back cut off, or a field refuses voice input, the keyboard says so in its own panel.</p>
+
+<h2 id="styles">Writing styles</h2>
+<p>The chips above the keys are your writing styles. Eight ship built in:</p>
+<ul class="chips">
+  <li>Fix Grammar</li><li>Professional</li><li>Bullet points</li><li>Casual</li><li>Concise</li><li>Summary</li><li>Reply-ready</li><li>To-do List</li>
+</ul>
+<p><strong>Bullet points</strong> turns a scrambled thought into a short clean list of up to six bullets, with no padding and with names and numbers exactly as you said them. <strong>Reply-ready</strong> turns rambling fragments into a message you can send. All eight work with Gemini, with Groq, and with the free on-device model.</p>
+<p>In <strong>Settings → Writing styles</strong> you can drag a style's handle (or use Move up / Move down) to reorder, add your own custom prompts, and turn individual styles on or off. New built-in styles are added at the end and never reorder or overwrite your own.</p>
+
+<h3 id="field-correction">Fix the whole message with one hold</h3>
+<ol class="steps">
+  <li><strong>Hold a style chip</strong>The keyboard captures everything in the text box and rewrites it under that style.</li>
+  <li><strong>Read the preview</strong>The original is shown struck through. Tap a different chip to re-run the same text in another style.</li>
+  <li><strong>Tap Replace</strong>The message is rewritten in place. If you typed while it was thinking, it asks instead of overwriting.</li>
+  <li><strong>Undo if you want</strong>A five-second Undo bar sits above the keys after every replace.</li>
+</ol>
+<p>It refuses outright in password, email, address, phone, number and date fields, before anything leaves your phone, and it will not replace a truncated result. You can switch Field Correction on or off in <strong>Settings → Writing styles</strong>.</p>
+
+<h3 id="cloud-or-local">Cloud or on-device rewriting</h3>
+<p>Choose who rewrites in <strong>Settings → AI cleanup</strong>. Gemini and Groq send your text directly to that provider using your key. <strong>On-device</strong> runs a Qwen3 model (0.6B or 1.7B, downloaded on demand) on your phone, with no key and no network. With the on-device model selected, it prepares while you dictate, so there is less waiting after Stop.</p>
+
+<h2 id="language-chip">Answer in another language</h2>
+<p>Every result names the language it came back in on the <strong>Language Chip</strong>.</p>
+<ul>
+  <li><strong>Tap</strong> to switch to the next language on your shortlist and re-run the same text.</li>
+  <li><strong>Hold</strong> and slide down the column, then lift on the one you want. Release without sliding and nothing changes.</li>
+  <li>Switching on the chip changes the Output Language setting, by design. It is what you see next time you open Settings.</li>
+  <li>Choose the shortlist in <strong>Settings → Languages → Language Shortlist</strong>. Available languages include English, Japanese, Korean, Traditional and Simplified Chinese, Spanish, French, German and Portuguese.</li>
+</ul>
+<p>Output Language applies to AI rewriting. It does not change the offline or Android recogniser or your keyboard layout.</p>
+
+<h2 id="cjk">Type Japanese and Chinese</h2>
+<ol class="steps">
+  <li><strong>Add the languages</strong><strong>Settings → Languages → Typing languages → Add Japanese and Chinese.</strong> Tick the ones you want: Japanese (romaji), Traditional Chinese (pinyin), Simplified Chinese (pinyin).</li>
+  <li><strong>Switch with the globe</strong>Tap the globe key beside the space bar to cycle through your typing languages. The space bar names the current one.</li>
+  <li><strong>Type and pick</strong>Type romaji (<code>arigatou</code> becomes ありがとう) or pinyin (<code>nihao</code> becomes 你好) and choose from the conversion candidates above the keys.</li>
+</ol>
+<p>This runs entirely on the phone. There is no network call and no key, and it works in airplane mode. It is separate from AI rewriting.</p>
+
+<h2 id="typing">Typing help and gestures</h2>
+<ul>
+  <li><strong>Suggestion strip.</strong> Words appear above the keys as you type; tap one to swap it in. Words it does not recognise get a quiet underline.</li>
+  <li><strong>Auto-fix.</strong> Obvious typos fix themselves on space (“teh ” becomes “the ”). One backspace puts your word back and teaches the keyboard to leave it alone.</li>
+  <li><strong>Next-word prediction.</strong> After a word, the strip offers what usually comes next.</li>
+  <li><strong>Digits.</strong> Hold a top-row key for its digit: <code>q</code> is 1 through <code>p</code> is 0.</li>
+  <li><strong>Punctuation palette.</strong> Hold <code>.</code> or <code>,</code> for sixteen marks in two rows. Slide and lift to type one.</li>
+  <li><strong>Hold backspace.</strong> It deletes characters first and switches to whole words after about a second, with a buzz at the switch. It stops at line breaks. A tap deletes exactly one character.</li>
+</ul>
+<p>All typing help runs on the phone against a dictionary built into the app. Learned words stay on your device, and you can review and delete them in Settings. It switches itself off in password, email, URL, phone and number fields. Turn parts of it off in <strong>Settings → Typing &amp; feel</strong>.</p>
+
+<h2 id="transform">Rewrite text from other apps</h2>
+<p>Select text in a supported app and choose <strong>AI Keyboard</strong> from the text-selection menu, or share text to it. Apply a style, then replace, copy or share the result.</p>
+
+<h2 id="settings-map">Where things are in Settings</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Destination</th><th>What lives there</th></tr></thead>
+<tbody>
+<tr><td>Keyboard walkthrough</td><td>Activation checklist and the practice box</td></tr>
+<tr><td>Dictation</td><td>Speech provider, offline voice pack, speech language, Voice home, result behaviour</td></tr>
+<tr><td>AI cleanup</td><td>Gemini, Groq or On-device, and the model controls for the selected one</td></tr>
+<tr><td>Typing &amp; feel</td><td>Typing assistance, learned words, haptics, key sound, Keyboard style (Sprout or Classic)</td></tr>
+<tr><td>Languages</td><td>Typing languages, Output Language, Language Shortlist</td></tr>
+<tr><td>Writing styles</td><td>Built-in and custom styles, order, Field Correction</td></tr>
+<tr><td>Cloud &amp; privacy</td><td>Groq and Gemini keys, token usage statistics</td></tr>
+<tr><td>Help &amp; About</td><td>Keyboard setup recovery, troubleshooting, version</td></tr>
+</tbody></table></div>
+
+</article>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+        <p>A free Android keyboard for people who talk, fix, and switch languages. Made by YCK.</p>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="setup.html">Set up the keyboard</a></li>
+          <li><a href="usage.html">How to use it</a></li>
+          <li><a href="groq-api-key.html">Get a Groq key</a></li>
+          <li><a href="gemini-api-key.html">Get a Gemini key</a></li>
+          <li><a href="gemini-cost-estimator.html">Cost estimator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Open-source licences</a></li>
+          <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+          <li><a href="mailto:support@kengblog.com">support@kengblog.com</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

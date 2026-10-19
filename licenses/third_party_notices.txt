@@ -1,0 +1,44 @@
+Third-party software and model notices
+
+OpenCC4j v1.13.1
+Copyright OpenCC4j contributors.
+Licensed under Apache License, Version 2.0. This library provides Traditional-Chinese phrase conversion for Taiwan; its full license is in OPENCC4J_LICENSE.txt.
+Source: https://github.com/houbb/opencc4j
+
+sherpa-onnx Android runtime v1.13.8
+Copyright K2-FSA and contributors.
+Licensed under the Apache License, Version 2.0. The full license is included in LICENSE-APACHE-2.0.txt and available at https://www.apache.org/licenses/LICENSE-2.0.
+Source: https://github.com/k2-fsa/sherpa-onnx
+
+The app does not use the prebuilt sherpa-onnx v1.13.8 Android AAR. It ships an offline-speech-recognition-only build of the same v1.13.8 source tag, compiled for arm64-v8a with text-to-speech disabled (SHERPA_ONNX_ENABLE_TTS=OFF), so the text-to-speech components (piper-phonemize and eSpeak NG) are not part of the app. The native library libsherpa-onnx-jni.so statically includes these projects, identified from sherpa-onnx v1.13.8 build configuration: kaldi-native-fbank v1.22.3 (Copyright (c) 2022 Xiaomi Corporation and contributors; Apache-2.0; full license in KALDI_NATIVE_FBANK_LICENSE.txt; no separate NOTICE file), kaldi-decoder v0.3.0 (Copyright (c) 2023 Xiaomi Corporation and contributors; Apache-2.0; full license in KALDI_DECODER_LICENSE.txt; no separate NOTICE file), kaldifst v1.8.0, including its OpenFST-derived code (Copyright (c) 2021-2023 Xiaomi Corporation and contributors; Apache-2.0; full legal notices and license in KALDIFST_LICENSE.txt; no separate NOTICE file), and simple-sentencepiece v0.7 (Copyright (c) 2024 Wei Kang; Apache-2.0; full license in SIMPLE_SENTENCEPIECE_LICENSE.txt; no separate NOTICE file). The Android NDK 27.2.12479018 LLVM libc++ runtime is also included (Copyright (c) 2009-2019 contributors listed in its CREDITS.TXT; Apache-2.0 with LLVM Exceptions and MIT license; full license text in LLVM_LIBCXX_LICENSE.txt). The sherpa-onnx source project is Apache License 2.0 (full text in LICENSE-APACHE-2.0.txt). ONNX Runtime v1.28.2 is bundled as libonnxruntime.so under the MIT License; its full license is in ONNX_RUNTIME_LICENSE.txt and its complete upstream third-party notices, including bundled dependencies, are in ONNX_RUNTIME_THIRD_PARTY_NOTICES.txt. The pinned upstream releases provide LICENSE files but no separate NOTICE files for these components. The build is reproducible with tools/sherpa-onnx/build-asr-only.sh in the app's source repository.
+
+ONNX Runtime v1.28.2
+Copyright Microsoft Corporation.
+Licensed under the MIT License. Full license text: ONNX_RUNTIME_LICENSE.txt.
+Source: https://github.com/microsoft/onnxruntime
+
+SenseVoice Small INT8 model
+Model name: SenseVoice Small (SenseVoiceSmall), converted to ONNX INT8 by the sherpa-onnx project.
+Original author/source: FunAudioLLM / Alibaba Group, https://github.com/FunAudioLLM/SenseVoice
+Converted artifact source: https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17
+License: FunASR Model Open Source License Agreement v1.1 (custom; not MIT). The license requires attribution to the source and author and retention of relevant model names. It describes the model software as for reference and learning purposes only. The full upstream agreement is in FUNASR_MODEL_LICENSE.txt and at https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE.
+The model and tokens are downloaded on demand from Hugging Face to private app storage, are not bundled in the APK, and are verified by pinned SHA-256 checksums before use.
+
+llama.cpp (tag b11696, commit ceefd16daa2093730bf3340315fa2b84b286ddbc) and ggml
+Copyright The ggml authors.
+Licensed under the MIT License; the full license is in LLAMA_CPP_LICENSE.txt. It runs the optional on-device text-style model on the CPU (arm64). No audio, text-to-speech or GPL components are included.
+Source: https://github.com/ggml-org/llama.cpp
+
+Qwen3 0.6B and Qwen3 1.7B (Q4_K_M GGUF)
+Original model: Qwen3, by the Qwen team, Alibaba Cloud, https://github.com/QwenLM/Qwen3
+License: Apache License 2.0; the full license is in LICENSE-APACHE-2.0.txt.
+GGUF quantizations by bartowski: https://huggingface.co/bartowski/Qwen_Qwen3-0.6B-GGUF and https://huggingface.co/bartowski/Qwen_Qwen3-1.7B-GGUF
+The models are downloaded on demand from Hugging Face to private app storage, are not bundled in the APK, and are verified by pinned SHA-256 checksums before use.
+
+Japanese and Chinese typing engines (offline, bundled in the APK)
+These power the Japanese (romaji) and Traditional/Simplified Chinese (pinyin) typing languages. They make no network calls. Full licence texts are in CJK_TYPING_LICENSES.txt; the exact source revisions are pinned in tools/cjk/revisions.env of the app's source repository, and the libraries are rebuilt from them by tools/cjk/build-all.sh.
+- Mozc (revision 0136c357), Copyright 2010-2018 Google Inc. and contributors, BSD 3-Clause. Source: https://github.com/google/mozc. Its open-source dictionary is derived from IPAdic (mecab-ipadic-2.7.0, Copyright 2000-2003 Nara Institute of Science and Technology, with ICOT Free Software terms) and the public-domain Okinawa dictionary. Mozc statically links Abseil and Protocol Buffers (lite), both permissively licensed (Apache-2.0 and BSD 3-Clause respectively).
+- librime 1.17.0 (revision 7bc3fb00), Copyright (c) 2014 RIME Developers, BSD 3-Clause. Source: https://github.com/rime/librime
+- yaml-cpp, Copyright (c) 2008-2015 Jesse Beder, MIT. LevelDB, Copyright (c) 2011 The LevelDB Authors, BSD 3-Clause. marisa-trie 0.3.1, Copyright (c) 2010-2025 Susumu Yata, BSD 2-Clause (elected from BSD 2-Clause OR LGPL-2.1-or-later).
+- OpenCC 1.4.2 (native library and script-conversion dictionaries), Apache License 2.0 (LICENSE-APACHE-2.0.txt). Source: https://github.com/BYVoid/OpenCC. The Traditional Chinese profile uses the t2tw conversion chain.
+- Rime Luna Pinyin (朙月拼音, revision 56b934b0) and Rime Essay (revision 054920de), licensed under the GNU Lesser General Public License v3.0. Sources: https://github.com/rime/rime-luna-pinyin and https://github.com/rime/rime-essay. The compiled pinyin table in assets/cjk/user/build/ is a build product of those two datasets, and the schemas in assets/cjk/share/ are reduced derivatives of Luna Pinyin's (tools/cjk/rime/ in the source repository). The unmodified data and the build scripts that regenerate the table are published with the app's source; the build recipe is tools/cjk/build-data.sh.

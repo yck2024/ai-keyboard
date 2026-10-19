@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — AI Keyboard</title>
+<meta name="description" content="How AI Keyboard handles your voice, text and API keys: cloud features go straight to the provider you choose, and offline and on-device features stay on your phone.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#356849">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy Policy — AI Keyboard">
+<meta property="og:description" content="How AI Keyboard handles your voice, text and API keys: cloud features go straight to the provider you choose, and offline and on-device features stay on your phone.">
+<meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
+<meta property="og:url" content="https://yck2024.github.io/ai-keyboard/privacy.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / Privacy</p><h1>Privacy Policy for AI Keyboard</h1><p>Last updated: 19 October 2026 (app version 2.2). AI Keyboard has no server of its own and no account system.</p></div></div>
+<div class="page"><div class="container"><div class="layout">
+<nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#summary">Where your data goes</a></li><li><a href="#info">Collection and use</a></li><li><a href="#third-parties">Third parties</a></li><li><a href="#log">Log data</a></li><li><a href="#children">Children</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+<article>
+
+<p>YCK built the AI Keyboard app as a free app. This service is provided at no cost and is intended for use as is.</p>
+<p>This page explains what the app does with your information. If you choose to use the app, you agree to the collection and use of information as described here. I will not use or share your information with anyone except as described in this policy.</p>
+
+<div class="callout good"><p><strong>In short.</strong> Cloud dictation and cloud writing styles go directly from your phone to the provider you chose, using your own API key. Offline SenseVoice dictation, the on-device writing model, and Japanese and Chinese typing stay on your phone. Android speech uses your phone's own speech service and may use the network. I do not run a server that receives your audio, text or keys.</p></div>
+
+<h2 id="summary">Where your data goes</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>What you use</th><th>What is processed</th><th>Where it goes</th></tr></thead>
+<tbody>
+<tr><td>Typing, suggestions, auto-fix, next-word prediction, learned words</td><td>What you type</td><td>Stays on your phone. No network.</td></tr>
+<tr><td>Japanese and Chinese typing</td><td>What you type</td><td>Stays on your phone. No network.</td></tr>
+<tr><td>Offline dictation (SenseVoice)</td><td>Audio from the microphone</td><td>Stays on your phone.</td></tr>
+<tr><td>On-device writing styles (Qwen3)</td><td>The text being rewritten</td><td>Stays on your phone.</td></tr>
+<tr><td>Android speech dictation</td><td>Audio from the microphone</td><td>Your phone's own speech service. It may use the network; its provider's policy applies.</td></tr>
+<tr><td>Groq Whisper dictation</td><td>Audio, in short chunks</td><td>Sent directly to Groq with your key.</td></tr>
+<tr><td>Gemini Live dictation</td><td>Audio, streamed</td><td>Sent directly to Google with your key.</td></tr>
+<tr><td>Cloud writing styles (Gemini or Groq)</td><td>The text you ask it to rewrite, and your style prompt</td><td>Sent directly to the provider you selected, with your key, only when you trigger it.</td></tr>
+</tbody></table></div>
+
+<h2 id="info">Information collection and use</h2>
+<p>AI Keyboard is designed to collect as little as possible. I do not operate any server that receives your data, and the app has no account, sign-in or advertising. It contains no analytics or advertising SDK.</p>
+
+<h3>1. Microphone and voice data</h3>
+<p>Dictation needs access to your microphone. The app records audio only while the microphone is on, after you tap it, and never in the background. Nothing records until you tap, including in Voice home.</p>
+<ul>
+  <li><strong>Offline SenseVoice:</strong> audio is processed on your phone and does not leave it.</li>
+  <li><strong>Android speech:</strong> audio is handled by the speech service installed on your phone, which may use the network. It is not guaranteed to be offline.</li>
+  <li><strong>Groq Whisper and Gemini Live:</strong> audio is sent to Groq or Google, using your own API key, to be transcribed.</li>
+  <li>No audio and no transcript is saved to disk by the app. If a Groq audio chunk fails to send, it is kept in memory for the current dictation only, and cleared when you finish, cancel or the provider is released.</li>
+</ul>
+
+<h3>2. Text and AI processing</h3>
+<p>To rewrite text with a writing style, the text you choose is sent to the provider you selected: Google Gemini or Groq, using your own API key, or processed on your phone by the optional on-device model. Text is sent only when you trigger an action, for example by stopping a dictation with Stop + AI, holding a style chip, or using the text-selection or share menu. Field Correction reads the focused text box only when you trigger it, and refuses in password, email, address, phone, number and date fields before anything is sent.</p>
+<p>Everything you type is processed on your phone for suggestions, auto-fix, prediction and Japanese and Chinese conversion. Keystrokes are not sent anywhere.</p>
+
+<h3>3. API keys and settings</h3>
+<p>Your Groq and Gemini keys are stored encrypted on your device. Your settings, writing styles, learned words and token-usage statistics are stored locally on your device. The app does not back up its data to the cloud. You can clear a key, delete the offline pack and review or delete learned words in Settings, and uninstalling the app removes all of it.</p>
+
+<h3>4. Downloads</h3>
+<p>The offline voice model (SenseVoice, about 228&nbsp;MiB) and the on-device writing models (Qwen3) are downloaded only when you ask for them, from Hugging Face to the app's private storage, and verified by checksum. Like any download, this lets Hugging Face see your IP address.</p>
+
+<h3>Permissions</h3>
+<ul>
+  <li><strong>Microphone:</strong> for dictation, as described above.</li>
+  <li><strong>Internet:</strong> to reach the provider you chose, and for model downloads.</li>
+  <li><strong>Vibrate:</strong> for key haptics.</li>
+</ul>
+
+<h2 id="third-parties">Third-party services</h2>
+<p>When you choose them, these services receive the data described above under their own terms and privacy policies. I do not control them.</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy">Google</a>: Gemini API (Gemini Live and Gemini writing styles) and, if you pick it, your phone's Android speech service. See also the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>.</li>
+  <li><a href="https://groq.com/privacy-policy">Groq</a>: Whisper dictation and Groq writing styles.</li>
+  <li><a href="https://huggingface.co/privacy">Hugging Face</a>: one-time model downloads.</li>
+  <li><a href="https://policies.google.com/privacy">Google Play</a>: distribution of the app. If you installed from Google Play, Google may share aggregated diagnostics, such as crash reports, with the developer through Play Console, under Google's policies and your device settings.</li>
+</ul>
+
+<h2 id="log">Log data</h2>
+<p>The app has no crash reporting or analytics of its own and does not send log data to me. If you turn on debug logging in Help &amp; About → Troubleshooting, logs stay on your phone until you copy or clear them yourself.</p>
+
+<h2 id="security">Security</h2>
+<p>I value your trust and use commercially reasonable means to protect your information, such as encrypted key storage. No method of electronic storage or transmission is 100% secure, and I cannot guarantee absolute security.</p>
+
+<h2 id="links">Links to other sites</h2>
+<p>This site and the app may link to other sites. If you click a third-party link, you are sent to that site, which I do not operate. I strongly advise you to review the privacy policy of every site you visit. I have no control over, and assume no responsibility for, the content, policies or practices of third-party sites or services.</p>
+
+<h2 id="children">Children's privacy</h2>
+<p>These services do not address anyone under 13. I do not knowingly collect personal information from children under 13. Because the app does not send data to me, I hold none, but if you are a parent or guardian and believe your child has provided personal information, please contact me so that I can take the necessary action.</p>
+
+<h2 id="changes">Changes to this policy</h2>
+<p>I may update this policy from time to time. I will post the new policy on this page, with the date above, so please review it periodically. Changes are effective when posted.</p>
+
+<h2 id="contact">Contact</h2>
+<p>If you have questions or suggestions about this policy, contact <a href="mailto:support@kengblog.com">support@kengblog.com</a>, or use the <a href="https://forms.gle/EVX64Rimp2fQsJxh8">feedback form</a>.</p>
+
+</article>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+        <p>A free Android keyboard for people who talk, fix, and switch languages. Made by YCK.</p>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="setup.html">Set up the keyboard</a></li>
+          <li><a href="usage.html">How to use it</a></li>
+          <li><a href="groq-api-key.html">Get a Groq key</a></li>
+          <li><a href="gemini-api-key.html">Get a Gemini key</a></li>
+          <li><a href="gemini-cost-estimator.html">Cost estimator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Open-source licences</a></li>
+          <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+          <li><a href="mailto:support@kengblog.com">support@kengblog.com</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

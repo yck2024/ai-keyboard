@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get a Gemini API key — AI Keyboard</title>
+<meta name="description" content="Create a Google Gemini API key and paste it into AI Keyboard for Gemini Live dictation and Gemini writing styles.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#356849">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Get a Gemini API key — AI Keyboard">
+<meta property="og:description" content="Create a Google Gemini API key and paste it into AI Keyboard for Gemini Live dictation and Gemini writing styles.">
+<meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
+<meta property="og:url" content="https://yck2024.github.io/ai-keyboard/gemini-api-key.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html" aria-current="page">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / <a href="api-keys.html">AI providers</a> / Gemini</p><h1>Get a Gemini API key</h1><p>Use your own Google Gemini key for Gemini Live dictation and for Gemini writing styles.</p></div></div>
+<div class="page"><div class="container"><div class="layout">
+<nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#steps">Steps</a></li><li><a href="#use">Turn it on</a></li><li><a href="#cost">Free tier and cost</a></li><li><a href="#privacy">What goes to Google</a></li></ol></nav>
+<article>
+
+<div class="callout"><p>Keep your key private. Do not share it or post it publicly, and never commit it to Git.</p></div>
+
+<h2 id="steps">Steps</h2>
+<p>You need a Google account.</p>
+<ol class="steps">
+  <li><strong>Open Google AI Studio</strong>Go to <a href="https://ai.google.dev/gemini-api">ai.google.dev/gemini-api</a> and choose <strong>Get a Gemini API key</strong>, or open <a href="https://aistudio.google.com/apikey">aistudio.google.com/apikey</a> directly. Sign in with your Google account.</li>
+  <li><strong>Accept the terms</strong>If AI Studio asks you to agree to its terms, read them and continue.</li>
+  <li><strong>Create the key</strong>On the API keys page, choose <strong>Create API key</strong>. If it asks for a project, pick an existing Google Cloud project or let it create one for you.</li>
+  <li><strong>Copy it</strong>Use the copy button and save the key somewhere safe. You can always come back to the API keys page to copy it again or create a new one.</li>
+  <li><strong>Paste it into AI Keyboard</strong>Open <strong>Settings → Cloud &amp; privacy → Gemini connection</strong> (the setup wizard has the same field), paste the key and save.</li>
+</ol>
+<p class="meta">Google changes the labels in AI Studio from time to time. If a button is named differently, look for “API keys”.</p>
+
+<h2 id="use">Turn it on</h2>
+<ul>
+  <li><strong>Dictation:</strong> <strong>Settings → Dictation → Speech provider → Gemini Live</strong>. It uses <code>gemini-3.1-flash-live-preview</code>, and Settings names the model in the provider list.</li>
+  <li><strong>Writing styles:</strong> <strong>Settings → AI cleanup → Gemini</strong>. The recommended model is <code>gemini-3.5-flash-lite</code>. Fetch the models your key can use to pick another, or enter a custom model ID.</li>
+</ul>
+<p>Gemini Live delivers its transcript at pauses rather than word by word, so the live preview updates in bursts. A long sentence can take several seconds before its first words appear; the keyboard waits for it.</p>
+
+<h2 id="cost">Free tier and cost</h2>
+<p>Google offers a free tier for these models with usage limits, and a paid tier billed per token. As of October 2026 Google lists Gemini 3.5 Flash-Lite at $0.30 / $2.50 per million input / output tokens and Gemini 3.1 Flash Live at $3.00 per million audio input tokens and $4.50 per million text output tokens. The free tier can be quota-limited, which is worth knowing before you rely on Gemini Live. See <a href="gemini-cost-estimator.html">the cost estimator</a>, and Google's <a href="https://ai.google.dev/gemini-api/docs/pricing">official pricing page</a> for current numbers.</p>
+
+<h2 id="privacy">What goes to Google</h2>
+<p>With Gemini Live as your speech provider, audio is streamed to Google while you speak. With Gemini as your writing-style provider, the text you ask it to rewrite is sent. Both use your key and nothing passes through an AI Keyboard server. Google's terms apply to what it does next; on the free tier Google may use submitted content to improve its products, so check <a href="https://ai.google.dev/gemini-api/terms">the Gemini API terms</a>. If that matters to you, use a paid-tier key, <a href="usage.html#dictation">offline dictation</a> and the on-device writing model.</p>
+
+</article>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+        <p>A free Android keyboard for people who talk, fix, and switch languages. Made by YCK.</p>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="setup.html">Set up the keyboard</a></li>
+          <li><a href="usage.html">How to use it</a></li>
+          <li><a href="groq-api-key.html">Get a Groq key</a></li>
+          <li><a href="gemini-api-key.html">Get a Gemini key</a></li>
+          <li><a href="gemini-cost-estimator.html">Cost estimator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Open-source licences</a></li>
+          <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+          <li><a href="mailto:support@kengblog.com">support@kengblog.com</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

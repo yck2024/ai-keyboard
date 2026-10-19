@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Set up AI Keyboard — AI Keyboard</title>
+<meta name="description" content="Enable and choose AI Keyboard on Android, pick how you dictate, and practise typing in a real text box. No API key needed to start.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#356849">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Set up AI Keyboard — AI Keyboard">
+<meta property="og:description" content="Enable and choose AI Keyboard on Android, pick how you dictate, and practise typing in a real text box. No API key needed to start.">
+<meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
+<meta property="og:url" content="https://yck2024.github.io/ai-keyboard/setup.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a> <a href="setup.html" aria-current="page">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / Set up</p><h1>Set up AI Keyboard</h1><p>AI Keyboard is a system keyboard, so you enable it once and choose it when you type. The built-in walkthrough does most of this for you.</p></div></div>
+<div class="page"><div class="container"><div class="layout">
+<nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#install">Install</a></li><li><a href="#walkthrough">Walkthrough</a></li><li><a href="#dictation-choice">Dictation choice</a></li><li><a href="#keys">AI providers</a></li><li><a href="#japanese-chinese">Japanese &amp; Chinese</a></li><li><a href="#trouble">Troubleshooting</a></li></ol></nav>
+<article>
+
+<div class="callout good"><p><strong>You do not need an API key or a download to start.</strong> Typing, Japanese and Chinese typing, and the Android speech service all work out of the box. Add a key or the offline voice pack whenever you want more.</p></div>
+
+<h2 id="install">1. Install and open the app</h2>
+<p>Install <a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">AI Keyboard from Google Play</a> and open it. It needs Android 8.0 or newer on a 64-bit ARM (arm64) phone, which covers nearly every phone sold in recent years.</p>
+<p>New installs get the green Sprout look automatically. You can switch to the Classic look any time under <strong>Settings → Typing &amp; feel → Keyboard style</strong>.</p>
+
+<h2 id="walkthrough">2. Follow the walkthrough</h2>
+<ol class="steps">
+  <li><strong>Enable AI Keyboard</strong>Tap the button in the walkthrough. Android opens its on-screen keyboard list, where you switch AI Keyboard on. Android shows a standard warning that any keyboard can see what you type; this is shown for every third-party keyboard.</li>
+  <li><strong>Choose AI Keyboard</strong>Back in the app, tap the choose button. Android shows its keyboard picker; select AI Keyboard. You can open the same picker later from any text box with the keyboard-switcher icon Android shows near the bottom of the screen while a keyboard is open.</li>
+  <li><strong>Pick your home layout</strong>Choose <strong>Voice home</strong> for a big microphone with one Keyboard button, or <strong>Keyboard home</strong> to start on the keys. You can change it later in <strong>Settings → Dictation → Use voice as home</strong>.</li>
+  <li><strong>Choose how you will dictate (optional)</strong>Offline, Online, or typing only. See <a href="#dictation-choice">below</a>. Setup saves a choice only when you make one, and never turns AI cleanup on by itself.</li>
+  <li><strong>Try your keyboard</strong>Practise in a real text box using the actual keyboard, then tap <strong>I tried typing</strong>. Practice is optional. Nothing you type there is saved in Settings, and no AI connection is needed.</li>
+</ol>
+<p>Once the keyboard is enabled and selected you can also tap <strong>Use typing for now</strong> to skip voice and AI and start typing straight away.</p>
+<p>You can reopen the checklist and practice box any time from <strong>Settings → Keyboard walkthrough</strong>.</p>
+
+<h2 id="dictation-choice">3. Choose how to dictate</h2>
+<p>You can do this during setup or later in <strong>Settings → Dictation → Speech provider</strong>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Choice</th><th>Needs a key?</th><th>Where audio goes</th></tr></thead>
+<tbody>
+<tr><td><strong>Offline</strong> (SenseVoice)</td><td>No. One-time download of about 228&nbsp;MiB.</td><td>Stays on your phone.</td></tr>
+<tr><td><strong>Android speech service</strong></td><td>No</td><td>Handled by your phone's own speech service, which may use the network.</td></tr>
+<tr><td><strong>Groq Whisper</strong></td><td>Yes, a <a href="groq-api-key.html">Groq key</a></td><td>Sent directly to Groq.</td></tr>
+<tr><td><strong>Gemini Live</strong></td><td>Yes, a <a href="gemini-api-key.html">Gemini key</a></td><td>Streamed directly to Google.</td></tr>
+</tbody></table></div>
+<p>Offline dictation supports Japanese, Mandarin, Korean, Cantonese and English only. Online dictation has one <strong>Speech language</strong> setting that works across Android, Groq Whisper and Gemini Live. Auto-detect is the default.</p>
+<p>New installs do not force the offline download. Start with Android speech or a cloud key, and add the offline pack later if you want it.</p>
+
+<h2 id="keys">4. Add an AI provider (optional)</h2>
+<p>A key is needed for cloud dictation and for cloud writing styles. Get one in a couple of minutes:</p>
+<ul>
+  <li><a href="groq-api-key.html">Get a Groq API key</a> (Whisper speech and fast text rewriting)</li>
+  <li><a href="gemini-api-key.html">Get a Gemini API key</a> (Gemini Live speech and text rewriting)</li>
+</ul>
+<p>Paste it into <strong>Settings → Cloud &amp; privacy</strong> (the Groq or Gemini connection page). Then pick who rewrites your text under <strong>Settings → AI cleanup</strong>: Gemini, Groq, or the on-device model. The keyboard uses whichever provider actually has a key if your saved choice has none.</p>
+
+<h2 id="japanese-chinese">5. Turn on Japanese and Chinese typing (optional)</h2>
+<p><strong>Settings → Languages → Typing languages → Add Japanese and Chinese</strong>, then tap the globe key beside the space bar to cycle between your typing languages. Details are in <a href="usage.html#cjk">How to use</a>.</p>
+
+<h2 id="trouble">If something does not work</h2>
+<ul>
+  <li><strong>The keyboard does not appear.</strong> Open <strong>Settings → Help &amp; About → Keyboard setup</strong>. It checks whether AI Keyboard is enabled and selected, and takes you to the right Android screen.</li>
+  <li><strong>The microphone does nothing.</strong> Android asks for microphone permission the first time you tap the mic. If you declined, <strong>Help &amp; About → Troubleshooting</strong> takes you to the recovery steps.</li>
+  <li><strong>A message appears inside the keyboard.</strong> Provider not set up, a refused field, a cut-off reply, or a failed call each show their reason in the keyboard itself instead of an Android notification.</li>
+  <li>More answers are in the <a href="faq.html">FAQ</a>, or <a href="https://forms.gle/EVX64Rimp2fQsJxh8">send feedback</a>.</li>
+</ul>
+
+</article>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+        <p>A free Android keyboard for people who talk, fix, and switch languages. Made by YCK.</p>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="setup.html">Set up the keyboard</a></li>
+          <li><a href="usage.html">How to use it</a></li>
+          <li><a href="groq-api-key.html">Get a Groq key</a></li>
+          <li><a href="gemini-api-key.html">Get a Gemini key</a></li>
+          <li><a href="gemini-cost-estimator.html">Cost estimator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Open-source licences</a></li>
+          <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+          <li><a href="mailto:support@kengblog.com">support@kengblog.com</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

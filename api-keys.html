@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choose an AI provider — AI Keyboard</title>
+<meta name="description" content="Compare Groq, Gemini and on-device options for AI Keyboard, and learn how your own API key is used. No key is needed to start.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#356849">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Choose an AI provider — AI Keyboard">
+<meta property="og:description" content="Compare Groq, Gemini and on-device options for AI Keyboard, and learn how your own API key is used. No key is needed to start.">
+<meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
+<meta property="og:url" content="https://yck2024.github.io/ai-keyboard/api-keys.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html" aria-current="page">AI providers</a> <a href="faq.html">FAQ</a> <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / AI providers</p><h1>Choose an AI provider</h1><p>AI Keyboard works with no key at all. Add a provider when you want cloud dictation or cloud writing styles. You pay the provider directly, and only for what you use.</p></div></div>
+<div class="page"><div class="container"><div class="layout">
+<nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#compare">Compare</a></li><li><a href="#how">How your key is used</a></li><li><a href="#cost">Cost</a></li></ol></nav>
+<article>
+
+<div class="callout good"><p><strong>No key needed for:</strong> typing, Japanese and Chinese typing, offline SenseVoice dictation, Android speech dictation and the on-device writing-style model.</p></div>
+
+<h2 id="compare">Which one should I use?</h2>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>Groq</th><th>Gemini</th><th>On-device</th></tr></thead>
+<tbody>
+<tr><td><strong>Speech to text</strong></td><td>Whisper large-v3, in pause-aligned chunks</td><td>Gemini 3.1 Flash Live, streamed</td><td>SenseVoice (offline), or Android speech</td></tr>
+<tr><td><strong>Writing styles</strong></td><td>GPT-OSS 20B by default; pick another model if you like</td><td>Gemini 3.5 Flash-Lite by default; pick another model if you like</td><td>Qwen3 0.6B or 1.7B</td></tr>
+<tr><td><strong>Needs a key</strong></td><td>Yes</td><td>Yes</td><td>No</td></tr>
+<tr><td><strong>Needs network</strong></td><td>Yes</td><td>Yes</td><td>No (one-time model download)</td></tr>
+<tr><td><strong>Guide</strong></td><td><a href="groq-api-key.html">Get a Groq key</a></td><td><a href="gemini-api-key.html">Get a Gemini key</a></td><td><a href="usage.html#cloud-or-local">On-device options</a></td></tr>
+</tbody></table></div>
+<p>A reasonable start: get a <a href="groq-api-key.html">Groq key</a> for fast cloud dictation and rewriting, and add the offline pack for when you have no signal. Both providers have free plans with usage limits; limits and prices change, so check their pages.</p>
+
+<h2 id="how">How your key is used</h2>
+<ul>
+  <li>You paste it into <strong>Settings → Cloud &amp; privacy</strong> (or the setup wizard). It is stored encrypted on your device.</li>
+  <li>Requests go from your phone straight to the provider. AI Keyboard has no server in between.</li>
+  <li>The keyboard rewrites with whichever provider actually has a key, so a fresh Groq-only setup works without further steps.</li>
+  <li>Clearing a key asks for confirmation first.</li>
+  <li>A usage screen in <strong>Cloud &amp; privacy</strong> shows tokens in and out, request by request, so you can see what you are using.</li>
+</ul>
+
+<h2 id="cost">What will it cost?</h2>
+<p>For everyday use, very little. The <a href="gemini-cost-estimator.html">cost estimator</a> turns your minutes of speech per day into a rough monthly figure for Groq and Gemini. The Android speech service, the offline pack and the on-device model are free.</p>
+<div class="callout"><p>AI Keyboard is not affiliated with Google or Groq. Their prices, free tiers and sign-up screens are theirs to change; the official pages always win.</p></div>
+
+</article>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+        <p>A free Android keyboard for people who talk, fix, and switch languages. Made by YCK.</p>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="setup.html">Set up the keyboard</a></li>
+          <li><a href="usage.html">How to use it</a></li>
+          <li><a href="groq-api-key.html">Get a Groq key</a></li>
+          <li><a href="gemini-api-key.html">Get a Gemini key</a></li>
+          <li><a href="gemini-cost-estimator.html">Cost estimator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Open-source licences</a></li>
+          <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+          <li><a href="mailto:support@kengblog.com">support@kengblog.com</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

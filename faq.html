@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — AI Keyboard</title>
+<meta name="description" content="Answers about AI Keyboard: cost, API keys, privacy, offline dictation, writing styles, Japanese and Chinese typing, and setup problems.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#356849">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FAQ — AI Keyboard">
+<meta property="og:description" content="Answers about AI Keyboard: cost, API keys, privacy, offline dictation, writing styles, Japanese and Chinese typing, and setup problems.">
+<meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
+<meta property="og:url" content="https://yck2024.github.io/ai-keyboard/faq.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a> <a href="setup.html">Set up</a> <a href="usage.html">How to use</a> <a href="api-keys.html">AI providers</a> <a href="faq.html" aria-current="page">FAQ</a> <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / FAQ</p><h1>Frequently asked questions</h1><p>Short answers about cost, privacy, dictation, writing styles and setup.</p></div></div>
+<div class="page"><div class="container"><div class="layout">
+<nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#s0">General</a></li><li><a href="#s1">Privacy</a></li><li><a href="#s2">Dictation</a></li><li><a href="#s3">Writing styles and languages</a></li><li><a href="#s4">Typing</a></li><li><a href="#s5">Setup and support</a></li></ol></nav>
+<article>
+<h2 id="s0">General</h2>
+<details><summary>Is AI Keyboard free?</summary><p>Yes, the app is free. If you add a Groq or Gemini key, that provider may bill you directly for what you use, and both have free tiers with limits. The <a href="gemini-cost-estimator.html">cost estimator</a> gives a rough monthly figure. Android speech, offline dictation, on-device writing styles and all typing are free.</p></details>
+<details><summary>Do I need an API key?</summary><p>No. Typing, Japanese and Chinese typing, Android speech dictation, offline SenseVoice dictation and the on-device writing-style model all work without one. You need a key only for Groq or Gemini dictation and for Groq or Gemini writing styles. See <a href="api-keys.html">AI providers</a>.</p></details>
+<details><summary>What do I need to run it?</summary><p>Android 8.0 or newer on a 64-bit ARM (arm64) phone.</p></details>
+<details><summary>What is new in version 2.2?</summary><p>A green Sprout design by default, with a new launcher icon; Japanese and Chinese typing on-device; Voice home; live draft text while offline voice listens; a guided setup with a practice box; and reorderable writing styles. See the <a href="index.html#features">feature tour</a>.</p></details>
+<details><summary>Is it affiliated with Google or Groq?</summary><p>No. Gemini is a product of Google and Groq is a product of Groq, Inc.</p></details>
+<h2 id="s1">Privacy</h2>
+<details><summary>Where does my voice go?</summary><p>It depends on the provider you pick. Offline SenseVoice keeps audio on your phone. Android speech uses your phone's own speech service, which may use the network. Groq Whisper and Gemini Live send audio directly to Groq or Google with your key. The full list is in the <a href="privacy.html">privacy policy</a>.</p></details>
+<details><summary>Does AI Keyboard have a server?</summary><p>No. There is no AI Keyboard server and no account. Cloud requests go from your phone straight to the provider you chose.</p></details>
+<details><summary>Does it record all the time?</summary><p>No. The microphone is used only after you tap it. Nothing records on its own, including in Voice home. No audio or transcript is saved to disk.</p></details>
+<details><summary>Does it read my passwords?</summary><p>Typing help switches itself off in password, email, URL, phone and number fields. Whole-message rewriting refuses in those fields before anything leaves your phone, and Voice home keeps keys in password and number fields.</p></details>
+<details><summary>Where is my API key stored?</summary><p>Encrypted, on your phone. Clearing it in Settings asks for confirmation first.</p></details>
+<h2 id="s2">Dictation</h2>
+<details><summary>Which dictation option should I choose?</summary><p>Start with Android speech if you want zero setup, or add a <a href="groq-api-key.html">Groq key</a> for chunked Whisper dictation. Choose offline SenseVoice if you want audio to stay on your phone, work without signal, or avoid keys. The <a href="usage.html#dictation">comparison table</a> has the details.</p></details>
+<details><summary>Which languages does offline dictation support?</summary><p>Japanese, Mandarin, Korean, Cantonese and English, after a one-time download of about 228&nbsp;MiB. Online providers support more, depending on the service.</p></details>
+<details><summary>Why does Gemini Live text arrive in bursts?</summary><p>Gemini 3.1 Flash Live delivers its transcript at pauses rather than word by word, so the preview updates in bursts. It is more accurate and complete; it is less smooth to watch.</p></details>
+<details><summary>The microphone button does nothing.</summary><p>Check that microphone permission is granted (Android asks the first time) and that a speech provider is set up. Settings → Help &amp; About → Troubleshooting has microphone recovery steps. If a provider is not configured, the keyboard says so in its own panel.</p></details>
+<details><summary>What is the difference between Stop + AI and Stop (no AI)?</summary><p>Stop + AI applies your selected writing style to the transcript. Stop (no AI) inserts the transcript as it is.</p></details>
+<h2 id="s3">Writing styles and languages</h2>
+<details><summary>What is Field Correction?</summary><p>Hold a writing-style chip and the whole text box is rewritten under that style. You see a preview, tap Replace, and have five seconds to Undo. It refuses in sensitive fields and will not replace a cut-off result.</p></details>
+<details><summary>Why did the rewrite say my field changed?</summary><p>Before replacing, the keyboard re-reads the text box. If you typed while it was thinking, it asks instead of silently overwriting what you wrote.</p></details>
+<details><summary>Can I make my own styles?</summary><p>Yes. Add a custom prompt in Settings → Writing styles, then drag styles into the order you want. New built-in styles are added at the end and never overwrite yours.</p></details>
+<details><summary>What does the Language Chip do?</summary><p>It names the language the result came back in. Tap it to switch to the next language on your shortlist and re-run the same text; hold and slide to jump. Choose the shortlist in Settings → Languages.</p></details>
+<details><summary>Does the Language Chip translate my keyboard?</summary><p>No. Output Language applies to AI rewriting. Your keyboard layout comes from your typing languages, and offline and Android recognisers have their own language handling.</p></details>
+<h2 id="s4">Typing</h2>
+<details><summary>How do I type Japanese or Chinese?</summary><p>Settings → Languages → Typing languages → Add Japanese and Chinese, then tap the globe key beside the space bar. See <a href="usage.html#cjk">How to use</a>. It runs on your phone with no network and no key.</p></details>
+<details><summary>Is Japanese and Chinese typing really offline?</summary><p>Yes. The engines are bundled in the app and make no network calls. It works in airplane mode.</p></details>
+<details><summary>How do I stop it correcting a word?</summary><p>Press backspace once after an auto-fix to put your word back. Do it again for the same word and it stops correcting that word. You can also review and delete learned words, or turn parts of typing help off, in Settings → Typing &amp; feel.</p></details>
+<h2 id="s5">Setup and support</h2>
+<details><summary>The keyboard does not show up.</summary><p>It must be both enabled and selected. Open Settings → Help &amp; About → Keyboard setup, which checks both and takes you to the right Android screen. The <a href="setup.html">setup guide</a> walks through it.</p></details>
+<details><summary>Why does a keyboard need the Internet permission?</summary><p>To reach the provider you chose, and for the optional model downloads. Typing, offline dictation and Japanese and Chinese typing do not use it.</p></details>
+<details><summary>How do I send feedback or report a problem?</summary><p>Use the <a href="https://forms.gle/EVX64Rimp2fQsJxh8">feedback form</a> or email <a href="mailto:support@kengblog.com">support@kengblog.com</a>.</p></details>
+</article>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/icon-192.png" width="36" height="36" alt="">AI Keyboard</a>
+        <p>A free Android keyboard for people who talk, fix, and switch languages. Made by YCK.</p>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="setup.html">Set up the keyboard</a></li>
+          <li><a href="usage.html">How to use it</a></li>
+          <li><a href="groq-api-key.html">Get a Groq key</a></li>
+          <li><a href="gemini-api-key.html">Get a Gemini key</a></li>
+          <li><a href="gemini-cost-estimator.html">Cost estimator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Open-source licences</a></li>
+          <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+          <li><a href="mailto:support@kengblog.com">support@kengblog.com</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>
