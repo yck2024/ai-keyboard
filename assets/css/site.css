@@ -338,3 +338,11 @@ fieldset.field { border: 0; padding: 0; margin: 0; }
   .btn, .why .card, a.card, .strip .phone, .features .feature .phone-frame, .arrow { transition: none; }
   .btn:hover, .why .card:hover, a.card:hover, .strip .phone:hover, .features .feature:hover .phone-frame, .arrow:hover { transform: none; }
 }
+
+/* real app screenshots inside guides */
+.shot-row { display: flex; flex-wrap: wrap; gap: 22px; margin: 20px 0 30px; }
+.shot-row .phone { width: 200px; }
+.shot-row .phone-frame { border-radius: 26px; padding: 6px; box-shadow: 0 0 0 2px var(--mint-200), 0 14px 30px rgba(29, 77, 49, 0.16); }
+.shot-row .phone-frame img { border-radius: 21px; object-position: top; }
+.shot-row figcaption { font-size: 0.88rem; line-height: 1.4; }
+@media (max-width: 860px) { .shot-row { justify-content: center; } .shot-row .phone { width: min(44%, 200px); } }

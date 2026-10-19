@@ -53,6 +53,7 @@
   <li>Turn it on or off in <strong>Settings → Dictation → Use voice as home</strong>. Existing installs stay keys-first until you opt in.</li>
 </ul>
 
+<div class="shot-row"><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/01-voice-home.webp" width="540" height="960" alt="Voice home with a large microphone and a full-width Keyboard button" loading="lazy" decoding="async"></div><figcaption>Voice home</figcaption></figure><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/settings-dictation.webp" width="540" height="960" alt="Dictation settings with the Use voice as home switch" loading="lazy" decoding="async"></div><figcaption>Settings → Dictation</figcaption></figure></div>
 <h2 id="dictation">Dictation</h2>
 <p>Tap the microphone, speak, then stop. The result appears in a preview panel with a badge naming the model that produced it (Android's built-in recogniser shows no badge, because it runs on your phone and has no model to name).</p>
 <div class="table-wrap"><table>
@@ -65,6 +66,7 @@
 </tbody></table></div>
 <p>Choose the provider in <strong>Settings → Dictation → Speech provider</strong>. For online providers, <strong>Speech language</strong> defaults to Auto-detect; Gemini treats an explicit choice as a hint. Deleting the offline pack or clearing a key asks for confirmation and tells you that a selected provider will fall back to Android speech.</p>
 
+<div class="shot-row"><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/listening-android.webp" width="540" height="960" alt="Android speech listening panel with Stop + AI and Stop (no AI) buttons" loading="lazy" decoding="async"></div><figcaption>Listening, with Stop + AI or Stop (no AI)</figcaption></figure><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/02-live-dictation.webp" width="540" height="960" alt="Offline SenseVoice listening with live draft text" loading="lazy" decoding="async"></div><figcaption>Offline SenseVoice shows live text</figcaption></figure><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/03-dictation-result.webp" width="540" height="960" alt="A dictated sentence next to its Fix Grammar rewrite with Insert and Copy" loading="lazy" decoding="async"></div><figcaption>The result, with the model badge</figcaption></figure></div>
 <h3 id="stop">Stop + AI, or Stop (no AI)</h3>
 <ul>
   <li><strong>Stop + AI</strong> applies your selected writing style to the transcript. Tapping the mic to stop does the same: your words are inserted right away, then swapped for the cleaned version when the AI finishes. If the AI fails or you move on, your original words stay.</li>
@@ -81,6 +83,7 @@
 <p><strong>Bullet points</strong> turns a scrambled thought into a short clean list of up to six bullets, with no padding and with names and numbers exactly as you said them. <strong>Reply-ready</strong> turns rambling fragments into a message you can send. All eight work with Gemini, with Groq, and with the free on-device model.</p>
 <p>In <strong>Settings → Writing styles</strong> you can drag a style's handle (or use Move up / Move down) to reorder, add your own custom prompts, and turn individual styles on or off. New built-in styles are added at the end and never reorder or overwrite your own.</p>
 
+<div class="shot-row"><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/07-writing-styles.webp" width="540" height="960" alt="Writing styles settings with Field Correction and reorderable styles" loading="lazy" decoding="async"></div><figcaption>Settings → Writing styles</figcaption></figure></div>
 <h3 id="field-correction">Fix the whole message with one hold</h3>
 <ol class="steps">
   <li><strong>Hold a style chip</strong>The keyboard captures everything in the text box and rewrites it under that style.</li>
@@ -91,6 +94,7 @@
 <p>It refuses outright in password, email, address, phone, number and date fields, before anything leaves your phone, and it will not replace a truncated result. You can switch Field Correction on or off in <strong>Settings → Writing styles</strong>.</p>
 
 <h3 id="cloud-or-local">Cloud or on-device rewriting</h3>
+<div class="shot-row"><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/ai-cleanup-groq.webp" width="540" height="960" alt="AI cleanup settings with Groq selected as the correction provider" loading="lazy" decoding="async"></div><figcaption>AI cleanup: Groq selected</figcaption></figure><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/ai-cleanup-gemini.webp" width="540" height="960" alt="AI cleanup settings with Gemini selected as the correction provider" loading="lazy" decoding="async"></div><figcaption>AI cleanup: Gemini selected</figcaption></figure><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/ai-cleanup-local.webp" width="540" height="960" alt="AI cleanup settings with On-device Qwen3 selected and a Download model button" loading="lazy" decoding="async"></div><figcaption>AI cleanup: On-device</figcaption></figure></div>
 <p>Choose who rewrites in <strong>Settings → AI cleanup</strong>. Gemini and Groq send your text directly to that provider using your key. <strong>On-device</strong> runs a Qwen3 model (0.6B or 1.7B, downloaded on demand) on your phone, with no key and no network. With the on-device model selected, it prepares while you dictate, so there is less waiting after Stop.</p>
 
 <h2 id="language-chip">Answer in another language</h2>
@@ -104,6 +108,7 @@
 <p>Output Language applies to AI rewriting. It does not change the offline or Android recogniser or your keyboard layout.</p>
 
 <h2 id="cjk">Type Japanese and Chinese</h2>
+<div class="shot-row"><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/06-typing-languages.webp" width="540" height="960" alt="Languages settings with English, Japanese romaji, Traditional and Simplified Chinese pinyin typing languages" loading="lazy" decoding="async"></div><figcaption>Choose your typing languages</figcaption></figure><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/04-japanese-typing.webp" width="540" height="960" alt="Typing ありがとう with Japanese candidates above the keys" loading="lazy" decoding="async"></div><figcaption>Japanese from romaji</figcaption></figure><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/05-chinese-typing.webp" width="540" height="960" alt="Typing ni hao with Chinese pinyin candidates above the keys" loading="lazy" decoding="async"></div><figcaption>Chinese pinyin</figcaption></figure></div>
 <ol class="steps">
   <li><strong>Add the languages</strong><strong>Settings → Languages → Typing languages → Add Japanese and Chinese.</strong> Tick the ones you want: Japanese (romaji), Traditional Chinese (pinyin), Simplified Chinese (pinyin).</li>
   <li><strong>Switch with the globe</strong>Tap the globe key beside the space bar to cycle through your typing languages. The space bar names the current one.</li>
