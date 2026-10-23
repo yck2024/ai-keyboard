@@ -39,7 +39,7 @@
   </div>
 </header>
 <main id="main">
-<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / Privacy</p><h1>Privacy Policy for AI Keyboard</h1><p>Last updated: 19 October 2026 (app version 2.2). The app has no server of its own and no account system.</p></div></div>
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / Privacy</p><h1>Privacy Policy for AI Keyboard</h1><p>Last updated: 23 October 2026. The app has no server or account system of its own. Optional ChatGPT sign-in connects your own OpenAI account only on your phone.</p></div></div>
 <div class="page"><div class="container"><div class="layout">
 <nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#summary">Where your data goes</a></li><li><a href="#info">Collection and use</a></li><li><a href="#third-parties">Third parties</a></li><li><a href="#log">Log data</a></li><li><a href="#website">This website</a></li><li><a href="#children">Children</a></li><li><a href="#contact">Contact</a></li></ol></nav>
 <article>
@@ -47,7 +47,7 @@
 <p>YCK built the AI Keyboard app as a free app. This service is provided at no cost and is intended for use as is.</p>
 <p>This page explains what the app does with your information. If you choose to use the app, you agree to the collection and use of information as described here. I will not use or share your information with anyone except as described in this policy.</p>
 
-<div class="callout good"><p><strong>In short.</strong> Cloud dictation and cloud writing styles go directly from your phone to the provider you chose, using your own API key. Offline SenseVoice dictation, the on-device writing model, and Japanese and Chinese typing stay on your phone. Android speech uses your phone's own speech service and may use the network. I do not run a server that receives your audio, text or keys.</p></div>
+<div class="callout good"><p><strong>In short.</strong> Cloud dictation and cloud writing styles go directly from your phone to the provider you chose, using your own API key for Gemini or Groq, or your own ChatGPT account and plan for ChatGPT text cleanup. Offline SenseVoice dictation, the on-device writing model, and Japanese and Chinese typing stay on your phone. Android speech uses your phone's own speech service and may use the network. I do not run a server that receives your audio, text, keys or ChatGPT sign-in credentials.</p></div>
 
 <h2 id="summary">Where your data goes</h2>
 <div class="table-wrap"><table>
@@ -61,10 +61,11 @@
 <tr><td>Groq Whisper dictation</td><td>Audio, in short chunks</td><td>Sent directly to Groq with your key.</td></tr>
 <tr><td>Gemini Live dictation</td><td>Audio, streamed</td><td>Sent directly to Google with your key.</td></tr>
 <tr><td>Cloud writing styles (Gemini or Groq)</td><td>The text you ask it to rewrite, and your style prompt</td><td>Sent directly to the provider you selected, with your key, only when you trigger it.</td></tr>
+<tr><td>ChatGPT cleanup</td><td>The text you ask to clean up, including Process Text and optional voice cleanup, and your style prompt</td><td>Sent directly to OpenAI using your own ChatGPT account and plan, only when you trigger it. No audio is sent to OpenAI.</td></tr>
 </tbody></table></div>
 
 <h2 id="info">Information collection and use</h2>
-<p>AI Keyboard is designed to collect as little as possible. I do not operate any server that receives your data, and the app has no account, sign-in or advertising. It contains no analytics or advertising SDK.</p>
+<p>AI Keyboard is designed to collect as little as possible. I do not operate any server that receives your data, and the app has no account system of its own or advertising. Optional ChatGPT sign-in connects your own OpenAI account on your phone, not an account with me. It contains no analytics or advertising SDK.</p>
 
 <h3>1. Microphone and voice data</h3>
 <p>Dictation needs access to your microphone. The app records audio only while the microphone is on, after you tap it, and never in the background. Nothing records until you tap, including in Voice home.</p>
@@ -76,11 +77,13 @@
 </ul>
 
 <h3>2. Text and AI processing</h3>
-<p>To rewrite text with a writing style, the text you choose is sent to the provider you selected: Google Gemini or Groq, using your own API key, or processed on your phone by the optional on-device model. Text is sent only when you trigger an action, for example by stopping a dictation with Stop + AI, holding a style chip, or using the text-selection or share menu. Field Correction reads the focused text box only when you trigger it, and refuses in password, email, address, phone, number and date fields before anything is sent.</p>
+<p>To rewrite text with a writing style, the text you choose is sent to the provider you selected: Google Gemini or Groq, using your own API key, or OpenAI, using your own ChatGPT account and plan, or processed on your phone by the optional on-device model. ChatGPT cleanup includes Process Text and optional voice cleanup. Dictation still uses your separately selected speech provider; ChatGPT receives only text for cleanup, not audio. Text is sent only when you trigger an action, for example by stopping a dictation with Stop + AI, holding a style chip, or using the text-selection or share menu. Field Correction reads the focused text box only when you trigger it, and refuses in password, email, address, phone, number and date fields before anything is sent.</p>
 <p>Everything you type is processed on your phone for suggestions, auto-fix, prediction and Japanese and Chinese conversion. Keystrokes are not sent anywhere.</p>
 
 <h3>3. API keys and settings</h3>
 <p>Your Groq and Gemini keys are stored encrypted on your device. Your settings, writing styles, learned words and token-usage statistics are stored locally on your device. The app does not back up its data to the cloud. You can clear a key, delete the offline pack and review or delete learned words in Settings, and uninstalling the app removes all of it.</p>
+
+<p>Your ChatGPT sign-in (OAuth) credentials are stored encrypted on your device, never sent to any server of mine or synced. Disconnect clears local access, refresh and ID tokens and attempts revocation at OpenAI; remote revocation may not be confirmed. Encrypted registration details remain for later sign-in. Manage usage opens <a href="https://chatgpt.com/settings/usage">ChatGPT's usage settings</a>, where you can review app access and limits.</p>
 
 <h3>4. Downloads</h3>
 <p>The offline voice model (SenseVoice, about 228&nbsp;MiB) and the on-device writing models (Qwen3) are downloaded only when you ask for them, from Hugging Face to the app's private storage, and verified by checksum. Like any download, this lets Hugging Face see your IP address.</p>
@@ -97,6 +100,7 @@
 <ul>
   <li><a href="https://policies.google.com/privacy">Google</a>: Gemini API (Gemini Live and Gemini writing styles) and, if you pick it, your phone's Android speech service. See also the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>.</li>
   <li><a href="https://groq.com/privacy-policy">Groq</a>: Whisper dictation and Groq writing styles.</li>
+  <li><a href="https://openai.com/policies/privacy-policy/">OpenAI</a>: optional ChatGPT text cleanup using your own ChatGPT account and plan. OpenAI's terms, retention practices and plan limits apply. Requests use <code>store:false</code>, but this does not guarantee zero retention.</li>
   <li><a href="https://huggingface.co/privacy">Hugging Face</a>: one-time model downloads.</li>
   <li><a href="https://policies.google.com/privacy">Google Play</a>: distribution of the app. If you installed from Google Play, Google may share aggregated diagnostics, such as crash reports, with the developer through Play Console, under Google's policies and your device settings.</li>
 </ul>
