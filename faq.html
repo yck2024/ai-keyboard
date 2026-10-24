@@ -44,13 +44,14 @@
 <nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#s0">General</a></li><li><a href="#s1">Privacy</a></li><li><a href="#s2">Dictation</a></li><li><a href="#s3">Writing styles and languages</a></li><li><a href="#s4">Typing</a></li><li><a href="#s5">Setup and support</a></li></ol></nav>
 <article>
 <h2 id="s0">General</h2>
-<details><summary>Is AI Keyboard free?</summary><p>Yes, the app is free. If you add a Groq or Gemini key, that provider may bill you directly for what you use, and both have free tiers with limits. The <a href="gemini-cost-estimator.html">cost estimator</a> gives a rough monthly figure. Android speech, offline dictation, on-device writing styles and all typing are free.</p></details>
-<details><summary>Do I need an API key?</summary><p>No. Typing, Japanese and Chinese typing, Android speech dictation, offline SenseVoice dictation and the on-device writing-style model all work without one. You need a key only for Groq or Gemini dictation and for Groq or Gemini writing styles. See <a href="api-keys.html">AI providers</a>.</p></details>
+<details><summary>Is AI Keyboard free?</summary><p>Yes, the app is free. Groq and Gemini use your own API key and may bill you directly; both have free tiers with limits. ChatGPT cleanup uses your own ChatGPT plan, with its usage and limits. The <a href="gemini-cost-estimator.html">cost estimator</a> gives a rough monthly figure for Groq and Gemini. Android speech, offline dictation, on-device writing styles and all typing are free.</p></details>
+<details><summary>Do I need an API key?</summary><p>No. Typing, Japanese and Chinese typing, Android speech dictation, offline SenseVoice dictation and the on-device writing-style model all work without one. Groq and Gemini dictation or writing styles need their own API key. ChatGPT text cleanup needs no API key; sign in with your own ChatGPT plan. See <a href="api-keys.html">AI providers</a>.</p></details>
 <details><summary>What do I need to run it?</summary><p>Android 8.0 or newer on a 64-bit ARM (arm64) phone.</p></details>
 <details><summary>What is new in version 2.2?</summary><p>A green Sprout design by default, with a new launcher icon; Japanese and Chinese typing on-device; Voice home; live draft text while offline voice listens; a guided setup with a practice box; and reorderable writing styles. See the <a href="index.html#features">feature tour</a>.</p></details>
-<details><summary>Is it affiliated with Google or Groq?</summary><p>No. Gemini is a product of Google and Groq is a product of Groq, Inc.</p></details>
+<details><summary>Is it affiliated with Google, Groq or OpenAI?</summary><p>No. Gemini is a product of Google, Groq is a product of Groq, Inc., and ChatGPT is a product of OpenAI.</p></details>
 <h2 id="s1">Privacy</h2>
-<details><summary>Where does my voice go?</summary><p>It depends on the provider you pick. Offline SenseVoice keeps audio on your phone. Android speech uses your phone's own speech service, which may use the network. Groq Whisper and Gemini Live send audio directly to Groq or Google with your key. The full list is in the <a href="privacy.html">privacy policy</a>.</p></details>
+<details><summary>Where does my voice go? Does ChatGPT get audio?</summary><p>It depends on the speech provider you pick. Offline SenseVoice keeps audio on your phone. Android speech uses your phone's own speech service, which may use the network. Groq Whisper and Gemini Live send audio directly to Groq or Google with your key. ChatGPT is only a text-cleanup provider; it does not receive audio, and dictation still uses your separately chosen speech provider. The full list is in the <a href="privacy.html">privacy policy</a>.</p></details>
+<details><summary>Why does ChatGPT cleanup take longer?</summary><p>It takes a few seconds because of how OpenAI responds, not because of the app. Groq or Gemini are good picks when speed matters.</p></details>
 <details><summary>Does AI Keyboard have a server?</summary><p>No. There is no AI Keyboard server and no account. Cloud requests go from your phone straight to the provider you chose.</p></details>
 <details><summary>Does it record all the time?</summary><p>No. The microphone is used only after you tap it. Nothing records on its own, including in Voice home. No audio or transcript is saved to disk.</p></details>
 <details><summary>Does it read my passwords?</summary><p>Typing help switches itself off in password, email, URL, phone and number fields. Whole-message rewriting refuses in those fields before anything leaves your phone, and Voice home keeps keys in password and number fields.</p></details>
@@ -107,7 +108,7 @@
         </ul>
       </div>
     </div>
-    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google, Groq is a product of Groq, Inc., and ChatGPT is a product of OpenAI; AI Keyboard is not affiliated with Google, Groq or OpenAI. Android and Google Play are trademarks of Google LLC.</p>
   </div>
 </footer>
 <script src="assets/js/site.js" defer></script>
