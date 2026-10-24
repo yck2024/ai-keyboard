@@ -39,7 +39,7 @@
   </div>
 </header>
 <main id="main">
-<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / AI providers</p><h1>Choose an AI provider</h1><p>AI Keyboard works with no key at all. Add a provider when you want cloud dictation or cloud writing styles. You pay the provider directly, and only for what you use.</p></div></div>
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Home</a> / AI providers</p><h1>Choose an AI provider</h1><p>AI Keyboard works with no key at all. Add a provider when you want cloud dictation or text cleanup. Groq and Gemini use your own API key; ChatGPT uses your own ChatGPT plan for text only.</p></div></div>
 <div class="page"><div class="container"><div class="layout">
 <nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#compare">Compare</a></li><li><a href="#how">How your key is used</a></li><li><a href="#cost">Cost</a></li></ol></nav>
 <article>
@@ -48,29 +48,29 @@
 
 <h2 id="compare">Which one should I use?</h2>
 <div class="table-wrap"><table>
-<thead><tr><th></th><th>Groq</th><th>Gemini</th><th>On-device</th></tr></thead>
+<thead><tr><th></th><th>Groq</th><th>Gemini</th><th>ChatGPT</th><th>On-device</th></tr></thead>
 <tbody>
-<tr><td><strong>Speech to text</strong></td><td>Whisper large-v3, in pause-aligned chunks</td><td>Gemini 3.1 Flash Live, streamed</td><td>SenseVoice (offline), or Android speech</td></tr>
-<tr><td><strong>Writing styles</strong></td><td>GPT-OSS 20B by default; pick another model if you like</td><td>Gemini 3.5 Flash-Lite by default; pick another model if you like</td><td>Qwen3 0.6B or 1.7B</td></tr>
-<tr><td><strong>Needs a key</strong></td><td>Yes</td><td>Yes</td><td>No</td></tr>
-<tr><td><strong>Needs network</strong></td><td>Yes</td><td>Yes</td><td>No (one-time model download)</td></tr>
-<tr><td><strong>Guide</strong></td><td><a href="groq-api-key.html">Get a Groq key</a></td><td><a href="gemini-api-key.html">Get a Gemini key</a></td><td><a href="usage.html#cloud-or-local">On-device options</a></td></tr>
+<tr><td><strong>Speech to text</strong></td><td>Whisper large-v3, in pause-aligned chunks</td><td>Gemini 3.1 Flash Live, streamed</td><td>Not used for dictation; text cleanup only</td><td>SenseVoice (offline), or Android speech</td></tr>
+<tr><td><strong>Writing styles</strong></td><td>GPT-OSS 20B by default; pick another model if you like</td><td>Gemini 3.5 Flash-Lite by default; pick another model if you like</td><td>Choose a model available to your ChatGPT plan</td><td>Qwen3 0.6B or 1.7B</td></tr>
+<tr><td><strong>Needs a key</strong></td><td>Yes</td><td>Yes</td><td>No; sign in with your own ChatGPT plan</td><td>No</td></tr>
+<tr><td><strong>Needs network</strong></td><td>Yes</td><td>Yes</td><td>Yes</td><td>No (one-time model download)</td></tr>
+<tr><td><strong>Guide</strong></td><td><a href="groq-api-key.html">Get a Groq key</a></td><td><a href="gemini-api-key.html">Get a Gemini key</a></td><td>Sign in with your ChatGPT plan</td><td><a href="usage.html#cloud-or-local">On-device options</a></td></tr>
 </tbody></table></div>
-<p>A reasonable start: get a <a href="groq-api-key.html">Groq key</a> for fast cloud dictation and rewriting, and add the offline pack for when you have no signal. Both providers have free plans with usage limits; limits and prices change, so check their pages.</p>
+<p>A reasonable start: use Groq for fast cloud dictation and rewriting, or Gemini for cloud voice and writing; add the offline pack for when you have no signal. ChatGPT is another text-cleanup choice: sign in with your own ChatGPT plan, no API key, text only. Cleanup takes a few seconds because of how OpenAI responds, not because of the app; choose Groq or Gemini when speed matters. Free-plan limits and prices change, so check provider pages.</p>
 
 <div class="shot-row"><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/ai-cleanup-groq.webp" width="540" height="960" alt="AI cleanup settings: Gemini, Groq and On-device provider choices with Groq selected" loading="lazy" decoding="async"></div><figcaption>Pick the provider in Settings → AI cleanup</figcaption></figure><figure class="phone"><div class="phone-frame"><img src="assets/img/screens/ai-cleanup-local.webp" width="540" height="960" alt="AI cleanup with On-device Qwen3 selected, no key needed" loading="lazy" decoding="async"></div><figcaption>Or choose On-device, no key</figcaption></figure></div>
 <h2 id="how">How your key is used</h2>
 <ul>
   <li>You paste it into <strong>Settings → Cloud &amp; privacy</strong> (or the setup wizard). It is stored encrypted on your device.</li>
   <li>Requests go from your phone straight to the provider. AI Keyboard has no server in between.</li>
-  <li>The keyboard rewrites with whichever provider actually has a key, so a fresh Groq-only setup works without further steps.</li>
+  <li>Groq and Gemini require their own API keys. ChatGPT uses your signed-in ChatGPT plan instead; it is for text cleanup only, not dictation or audio.</li>
   <li>Clearing a key asks for confirmation first.</li>
   <li>A usage screen in <strong>Cloud &amp; privacy</strong> shows tokens in and out, request by request, so you can see what you are using.</li>
 </ul>
 
 <h2 id="cost">What will it cost?</h2>
 <p>For everyday use, very little. The <a href="gemini-cost-estimator.html">cost estimator</a> turns your minutes of speech per day into a rough monthly figure for Groq and Gemini. The Android speech service, the offline pack and the on-device model are free.</p>
-<div class="callout"><p>AI Keyboard is not affiliated with Google or Groq. Their prices, free tiers and sign-up screens are theirs to change; the official pages always win.</p></div>
+<div class="callout"><p>AI Keyboard is not affiliated with Google, Groq or OpenAI. Their prices, plans, limits and sign-up screens are theirs to change; the official pages always win.</p></div>
 
 </article>
 </div></div></div>
@@ -104,7 +104,7 @@
         </ul>
       </div>
     </div>
-    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google, Groq is a product of Groq, Inc., and ChatGPT is a product of OpenAI; AI Keyboard is not affiliated with Google, Groq or OpenAI. Android and Google Play are trademarks of Google LLC.</p>
   </div>
 </footer>
 <script src="assets/js/site.js" defer></script>
