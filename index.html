@@ -15,14 +15,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Keyboard: Voice & Rewrite — the free Android keyboard</title>
-<meta name="description" content="Voice-first AI keyboard for Android: dictate, rewrite in one hold, and type Japanese and Chinese on-device. Free, with your own Groq or Gemini key.">
+<meta name="description" content="Voice-first AI keyboard for Android: dictate, rewrite in one hold, and type Japanese and Chinese on-device. Free, with Groq, Gemini, ChatGPT-plan, and offline options.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#356849">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI Keyboard: Voice & Rewrite — the free Android keyboard">
-<meta property="og:description" content="Voice-first AI keyboard for Android: dictate, rewrite in one hold, and type Japanese and Chinese on-device. Free, with your own Groq or Gemini key.">
+<meta property="og:description" content="Voice-first AI keyboard for Android: dictate, rewrite in one hold, and type Japanese and Chinese on-device. Free, with Groq, Gemini, ChatGPT-plan, and offline options.">
 <meta property="og:image" content="https://yck2024.github.io/ai-keyboard/assets/img/feature-graphic.png">
 <meta property="og:url" content="https://yck2024.github.io/ai-keyboard/">
 <meta name="twitter:card" content="summary_large_image">
@@ -50,7 +50,7 @@
         <a class="btn btn-butter" href="https://play.google.com/store/apps/details?id=com.kengblog.aikeyboard">Get it on Google Play</a>
         <a class="btn btn-ghost" href="setup.html">Set up in minutes</a>
       </div>
-      <p class="note">The app is free. Bring your own Groq or Gemini key, or stay fully on your phone.</p>
+      <p class="note">The app is free. Use your own Groq or Gemini key, sign in with your ChatGPT plan for text cleanup, or stay on your phone.</p>
     </div>
     <div class="hero-visual">
       <div class="hero-phones">
@@ -86,8 +86,59 @@
       <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div><h3>Voice, your way</h3><p>Dictate with Groq Whisper, Gemini Live, the Android speech service, or fully offline with SenseVoice. A badge shows which model did the work.</p></div>
       <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l4-1 11-11a2.1 2.1 0 0 0-3-3L5 16l-1 4z"/><path d="M14 7l3 3"/></svg></div><h3>Rewrite in one hold</h3><p>Hold a writing-style chip and the whole message is rewritten in place, after a preview, with a five-second Undo.</p></div>
       <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></div><h3>One tap, another language</h3><p>Dictate in Japanese, send in English. The Language Chip re-runs the same text in the language you pick.</p></div>
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="3"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>Your key, your data</h3><p>There is no AI Keyboard server. Text and audio go straight from your phone to the provider you chose, or never leave it.</p></div>
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="3"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>Your key, your data</h3><p>There is no AI Keyboard server. Text and audio go straight from your phone to the provider you chose: your Groq or Gemini key, your ChatGPT account and plan for text cleanup, or stay on your phone.</p></div>
     </div>
+  </div>
+</section>
+
+<style>
+  .provider-choice { --provider-bg: #f1faf2; --provider-card: #fff; --provider-ink: #1b2b20; --provider-muted: #46594c; --provider-border: #c7d9cb; }
+  .provider-choice .provider-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 20px; }
+  .provider-choice .provider-card { background: var(--provider-card); color: var(--provider-ink); border: 1px solid var(--provider-border); border-radius: 28px; padding: 26px; box-shadow: var(--clay); min-width: 0; }
+  @media (max-width: 760px) { .provider-choice .provider-grid { grid-template-columns: minmax(0, 1fr); } }
+  .provider-choice .provider-card h3 { margin-bottom: 12px; }
+  .provider-choice .provider-card ul { list-style: none; padding: 0; margin: 0; }
+  .provider-choice .provider-card li { margin: 0; padding: 10px 0; border-top: 1px solid var(--provider-border); }
+  .provider-choice .provider-card li:first-child { border-top: 0; padding-top: 0; }
+  .provider-choice .provider-card strong { color: var(--leaf-deep); }
+  .provider-choice .provider-card span { display: block; color: var(--provider-muted); font-size: .94rem; line-height: 1.5; }
+  .provider-choice .provider-note { max-width: 76ch; margin: 24px 0 0; padding: 16px 20px; border-radius: 18px; background: var(--butter-100); color: var(--on-butter); }
+  @media (prefers-color-scheme: dark) {
+    .provider-choice { --provider-bg: #14251a; --provider-card: #1e3325; --provider-ink: #f0f7f0; --provider-muted: #d1e2d4; --provider-border: #52715a; background: var(--provider-bg); }
+    .provider-choice h2, .provider-choice h3, .provider-choice .provider-card strong { color: #c9edcf; }
+    .provider-choice .section-head p { color: #d1e2d4; }
+    .provider-choice .provider-note { background: #463d1e; color: #fff1b8; }
+  }
+  @media (prefers-reduced-motion: reduce) { .provider-choice .reveal { transition: none; } }
+</style>
+<section id="providers" class="provider-choice" aria-labelledby="providers-h">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Pick what fits</span>
+      <h2 id="providers-h">Voice and writing, your way</h2>
+      <p>Choose a voice provider and a separate text-cleanup provider in Settings. Bring a key, use your ChatGPT plan for text, or keep it on-device.</p>
+    </div>
+    <div class="provider-grid">
+      <article class="provider-card reveal">
+        <h3>Voice dictation</h3>
+        <ul>
+          <li><strong>Groq Whisper</strong><span>Your own API key</span></li>
+          <li><strong>Gemini Live</strong><span>Your own API key</span></li>
+          <li><strong>Android speech service</strong><span>No key; uses your phone's speech service, which may use the network</span></li>
+          <li><strong>SenseVoice</strong><span>Offline on your phone; no key</span></li>
+        </ul>
+      </article>
+      <article class="provider-card reveal">
+        <h3>Text cleanup &amp; writing styles</h3>
+        <ul>
+          <li><strong>Groq</strong><span>Your own API key</span></li>
+          <li><strong>Gemini</strong><span>Your own API key</span></li>
+          <li><strong>ChatGPT</strong><span>Sign in with your own ChatGPT plan; no API key. Text only, no audio.</span></li>
+          <li><strong>On-device model</strong><span>Offline on your phone</span></li>
+        </ul>
+      </article>
+    </div>
+    <p class="provider-note reveal">A quick heads-up: ChatGPT cleanup takes a few seconds because of how OpenAI responds, not because of the app. Groq or Gemini are good picks when speed matters.</p>
   </div>
 </section>
 
@@ -223,7 +274,7 @@
     <div class="privacy-strip reveal">
       <div>
         <h2 id="privacy-h">Your key, your data</h2>
-        <p>AI Keyboard has no server of its own, and the app is free. Cloud dictation and writing styles go directly from your phone to the provider you chose, using your own key. Offline SenseVoice, the on-device writing model, and Japanese and Chinese typing stay on your phone.</p>
+        <p>AI Keyboard has no server of its own, and the app is free. Cloud dictation and writing styles go directly from your phone to the provider you chose, using your own Groq or Gemini key, or your ChatGPT account and plan for text cleanup. Offline SenseVoice, the on-device writing model, and Japanese and Chinese typing stay on your phone.</p>
         <p><a href="privacy.html">Read the privacy policy →</a></p>
       </div>
       <ul>
@@ -277,7 +328,7 @@
         </ul>
       </div>
     </div>
-    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google and Groq is a product of Groq, Inc.; AI Keyboard is not affiliated with Google or Groq. Android and Google Play are trademarks of Google LLC.</p>
+    <p class="fine">&copy; 2026 YCK. Gemini is a product of Google, Groq is a product of Groq, Inc., and ChatGPT is a product of OpenAI; AI Keyboard is not affiliated with Google, Groq or OpenAI. Android and Google Play are trademarks of Google LLC.</p>
   </div>
 </footer>
 <script src="assets/js/site.js" defer></script>
